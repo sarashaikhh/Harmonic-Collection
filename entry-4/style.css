@@ -36,8 +36,8 @@ body{
   /* Styles for the image container */
 .image-container {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 510px;
+  height: 510px;
   overflow: hidden;
   margin: 0; 
   padding: 0;
