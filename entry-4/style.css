@@ -36,14 +36,14 @@ body{
   /* Styles for the image container */
 .image-container {
   position: relative;
-  width: 520px;
-  height: 520px;
+  width: 530px;
+  height: 530px;
   overflow: hidden;
   margin: 0; 
   padding: 0;
   display: inline-block;
   margin-right: -5px;
-  margin-bottom: -118px;
+  margin-bottom: -125px;
 
 
   
