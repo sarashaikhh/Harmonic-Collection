@@ -1,0 +1,289 @@
+body{
+  background-color: black;
+
+  }
+  h1{
+    text-align: center;
+    color: #ffffff;
+    word-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 500px;
+    margin-top: -500px;
+    margin-bottom: -500px;
+    display: inline-block;
+    padding-left: 800px;
+  
+  }
+  h2{
+    text-align: center;
+    color: #ffffff;
+    word-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 500px;
+    margin-top: -500px;
+    margin-bottom: -500px;
+    display: inline-block;
+    padding-left: 800px;
+  
+  }
+
+
+
+
+.image-container1 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container1 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+
+
+}
+
+/* Hover effect - move the image */
+.image-container1:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container1:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container2 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container2 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+/* Hover effect - move the image */
+.image-container2:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container2:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container3 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container3 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+/* Hover effect - move the image */
+.image-container3:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container3:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container4 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container4 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+
+
+}
+
+/* Hover effect - move the image */
+.image-container4:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container4:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container5 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container5 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+/* Hover effect - move the image */
+.image-container5:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container5:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container6 {
+  width: 33%;
+  height: 33%;
+  text-align: center;
+  display: inline-block;
+  aspect-ratio: 1/1;
+
+}
+
+/* The image inside the container */
+.image-container6 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+/* Hover effect - move the image */
+.image-container6:hover img {
+  transform: translateX(2000px); /* Adjust the value to control the horizontal movement */
+}
+
+/* Additional styling for the hover effect (optional) */
+.image-container6:hover {
+  border-color: #ff5733;
+  box-shadow: 0 0 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
