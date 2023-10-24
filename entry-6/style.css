@@ -61,7 +61,7 @@ width: 200px
 
 
 /* Phone breakpoint */
-@media (min-width: 480px) {
+@media (min-width: 380px) {
   h1 {
     font-size: 40px;
     margin-top: 50px;
