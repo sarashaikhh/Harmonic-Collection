@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  overflow: auto;
   height: 500px;
     background-image: url('sun.png');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
 }
@@ -33,12 +32,6 @@ p{
   font-size: 20px;
   text-align: center;
   margin-top: -70px; /* Move the text 10 pixels up */
-  /*flex-direction:  column;*/
-  justify-content:  space-between;
-  flex-wrap:  wrap;
-  
-
-
 }
 
 h1{
@@ -46,25 +39,18 @@ h1{
   padding: 20px;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 40px;
   display: block;
 }
 
 img{
 padding: 20px;
 width: 200px
-
 }
 
-img1{
-  padding: 20px;
-  width: 200px
-  
-  }
+
 
 
 #clock {
-  margin-top: -100px;
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -73,3 +59,52 @@ img1{
   
 }
 
+
+/* Phone breakpoint */
+@media (min-width: 480px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 50px;
+
+  }
+  #clock {
+    font-size: 20px;
+    margin-top: -50px;
+  }
+  p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -70px; /* Move the text 10 pixels up */
+  }
+  
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  #clock {
+    font-size: 30px;
+    margin-top: -60px;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 70px;
+    margin-top: 200px;
+
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 80px;
+    margin-top: 300px;
+
+  }
+}
