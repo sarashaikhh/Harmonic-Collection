@@ -32,6 +32,11 @@ body {
 p{
   font-size: 20px;
   text-align: center;
+  margin-top: -70px; /* Move the text 10 pixels up */
+  /*flex-direction:  column;*/
+  justify-content:  space-between;
+  flex-wrap:  wrap;
+  
 
 
 }
@@ -42,6 +47,7 @@ h1{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 40px;
+  flex-wrap:  wrap;
 
 }
 
@@ -68,10 +74,3 @@ img1{
   
 }
 
-pre{
-  margin-top: -150px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 30px;;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
