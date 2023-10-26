@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+
+}
+
+
+p{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  padding: 100px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.5;
+  text-align: center;
+  color:#FFFFFF
+}
+
+
+.nav{
+  justify-content: space-between;
+  display: flex;
+  padding: 20px
+  
+}
+
+
+h1{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-size: 150px;
+  text-align: center;
+  color:#FFFFFF
+
+}
+
+
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  text-align: center;
+  color:#FFFFFF
+}
