@@ -34,19 +34,9 @@ p{
   font-family: "evolver-variable", sans-serif;
   font-style: normal;
   font-weight: 400;
-  padding-left: 30px;
+  padding: 30px;
   font-size: 15px;
   width: 50%;
-  line-height: 30px;
-  color:#FFFFFF
-}
-
-p1{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 400;
-  font-size: 15px;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -64,20 +54,20 @@ p1{
 
 
 
-.triangle{
+.circle{
   width: 30%;
   position: absolute;
   margin-left: 10%;
 }
 
-.hover-triangle {
+.hover-circle {
   transition: transform 0.3s;
 }
 
-.hover-triangle:hover {
+.hover-circle:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('triangle2.png');
+  content: url('circle2.png');
 
 }
 
@@ -86,8 +76,8 @@ p1{
 
 .def{
   position: absolute;
-  margin-left: 40%;  
-  margin-top: 1.5%;
+  left: 40%;  
+  bottom: 10%;
 
 }
 
@@ -107,11 +97,11 @@ p1{
 
 
 .formula{
-  width: 30%;
+  width: 20%;
   position: absolute;
   margin-left: 10%;
-  left: 55%;
-  bottom: 10%
+  left: 60%;
+  top: 92%
 }
 
 .hover-formula {
@@ -130,20 +120,15 @@ p1{
 
 .history{
 
-  margin-top: 700px;  
+  top: 50%;  
 }
 
 
-.container{
-  width: 40%;
-left: 50%;
-bottom: 50%;
-padding-left: 30px;
 
-}
 
 .slider {
   display: flex;
+  width: 30%;
   aspect-ratio: 2 / 3;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
