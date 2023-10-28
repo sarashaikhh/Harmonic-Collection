@@ -1,0 +1,169 @@
+body{
+  background-color: black;
+
+}
+
+
+ul{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 77px;
+  color:#FFFFFF
+}
+
+
+.nav{
+  justify-content: space-between;
+  display: flex;
+  padding: 20px
+}
+
+
+h1{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 40px;
+  color:#FFFFFF
+}
+
+p{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 30px;
+  font-size: 15px;
+  width: 50%;
+  line-height: 30px;
+  color:#FFFFFF
+}
+
+p1{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color:#FFFFFF
+}
+
+
+
+
+
+.nav{
+  justify-content: space-between;
+  display: flex;
+  padding: 20px
+
+}
+
+
+
+.triangle{
+  width: 30%;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.hover-triangle {
+  transition: transform 0.3s;
+}
+
+.hover-triangle:hover {
+  transform: scale(1.1);
+  /* Change the image on hover */
+  content: url('triangle2.png');
+
+}
+
+
+
+
+.def{
+  position: absolute;
+  margin-left: 40%;  
+  margin-top: 1.5%;
+
+}
+
+.hover-def {
+  transition: transform 0.3s;
+}
+
+.hover-def:hover {
+  transform: scale(1.1);
+  /* Change the image on hover */
+  content: url('def2.png');
+
+}
+
+
+
+
+
+.formula{
+  width: 30%;
+  position: absolute;
+  margin-left: 10%;
+  left: 55%;
+  bottom: 10%
+}
+
+.hover-formula {
+  transition: transform 0.3s;
+}
+
+.hover-formula:hover {
+  transform: scale(1.1);
+  /* Change the image on hover */
+  content: url('formula2.png');
+
+}
+
+
+
+
+.history{
+
+  margin-top: 700px;  
+}
+
+
+.container{
+  width: 40%;
+left: 50%;
+bottom: 50%;
+padding-left: 30px;
+
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 2 / 3;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+
+
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff00;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+
