@@ -16,11 +16,20 @@ p{
 }
 
 
+ul{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 77px;
+  color:#FFFFFF
+}
+
+
 .nav{
   justify-content: space-between;
   display: flex;
   padding: 20px
-  
 }
 
 
