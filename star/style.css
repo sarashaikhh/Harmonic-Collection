@@ -72,10 +72,12 @@ p{
 
 
 .def{
+  width: 383px;
+  height: 412px;
   position: absolute;
   margin-left: 40%;  
   margin-top: 1.5%;
-
+  width: 30%;
 }
 
 .hover-def {
@@ -94,11 +96,10 @@ p{
 
 
 .formula{
-  width: 30%;
   position: absolute;
   margin-left: 10%;
-  left: 55%;
-  bottom: 10%
+  left: 35%;
+  bottom: 1%
 }
 
 .hover-formula {
