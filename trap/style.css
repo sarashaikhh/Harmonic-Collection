@@ -41,15 +41,6 @@ p{
   color:#FFFFFF
 }
 
-p1{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color:#FFFFFF
-}
 
 
 
@@ -64,20 +55,20 @@ p1{
 
 
 
-.triangle{
+.trap{
   width: 30%;
   position: absolute;
   margin-left: 10%;
 }
 
-.hover-triangle {
+.hover-trap {
   transition: transform 0.3s;
 }
 
-.hover-triangle:hover {
+.hover-trap:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('triangle2.png');
+  content: url('trap2.png');
 
 }
 

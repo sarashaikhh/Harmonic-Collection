@@ -41,19 +41,6 @@ p{
   color:#FFFFFF
 }
 
-p1{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color:#FFFFFF
-}
-
-
-
-
 
 .nav{
   justify-content: space-between;
@@ -64,20 +51,20 @@ p1{
 
 
 
-.triangle{
+.star{
   width: 30%;
   position: absolute;
   margin-left: 10%;
 }
 
-.hover-triangle {
+.hover-star {
   transition: transform 0.3s;
 }
 
-.hover-triangle:hover {
+.hover-star:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('triangle2.png');
+  content: url('star2.png');
 
 }
 
@@ -132,38 +119,3 @@ p1{
 
   margin-top: 700px;  
 }
-
-
-.container{
-  width: 40%;
-left: 50%;
-bottom: 50%;
-padding-left: 30px;
-
-}
-
-.slider {
-  display: flex;
-  aspect-ratio: 2 / 3;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
-}
-
-
-
-
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #ffffff00;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
-
