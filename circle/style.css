@@ -118,9 +118,8 @@ p1{
 .formula{
   width: 20%;
   position: absolute;
-  margin-left: 10%;
-  left: 60%;
-  top: 92%
+  left: 55%;
+  top: 90%
 }
 
 .hover-formula {
@@ -149,7 +148,7 @@ p1{
 .container{
   margin-left: 60%;
   padding-right: 30px;
-  margin-top: -450px;
+  margin-top: -350px;
 text-align: center;
 
 }
