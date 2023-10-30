@@ -26,7 +26,16 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  padding: 40px;
+  padding-left: 40px;
+  color:#FFFFFF
+}
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 5px;
   color:#FFFFFF
 }
 
@@ -41,6 +50,16 @@ p{
   color:#FFFFFF
 }
 
+p1{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color:#FFFFFF
+}
 
 
 
@@ -123,5 +142,41 @@ p{
   margin-top: 600px;  
 }
 
+
+
+
+
+.container{
+  margin-left: 60%;
+  padding-right: 30px;
+  margin-top: -450px;
+text-align: center;
+
+}
+
+
+.slider {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+
+
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff00;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
 
 
