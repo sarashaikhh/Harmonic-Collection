@@ -136,9 +136,9 @@ p1{
 
 .container{
   width: 40%;
-left: 50%;
-bottom: 50%;
-padding-left: 30px;
+  margin-left: 60%;
+  bottom: 50%;
+  padding-left: 30px;
 
 }
 
