@@ -120,35 +120,8 @@ p{
 
 .history{
 
-  top: 50%;  
+  margin-top: 600px;  
 }
 
-
-
-
-.slider {
-  display: flex;
-  width: 30%;
-  aspect-ratio: 2 / 3;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
-}
-
-
-
-
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #ffffff00;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
 
 
