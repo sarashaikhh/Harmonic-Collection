@@ -29,6 +29,15 @@ h1{
   padding-left: 40px;
   color:#FFFFFF
 }
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 5px;
+  color:#FFFFFF
+}
 
 p{
   font-family: "evolver-variable", sans-serif;
@@ -41,7 +50,16 @@ p{
   color:#FFFFFF
 }
 
-
+p1{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color:#FFFFFF
+}
 
 
 
@@ -100,7 +118,7 @@ p{
   width: 30%;
   position: absolute;
   left: 50%;
-  bottom: 25%
+  bottom: 35%
 }
 
 .hover-formula {
@@ -122,12 +140,18 @@ p{
 }
 
 
+.container{
+  margin-left: 60%;
+  padding-right: 30px;
+  margin-top: -450px;
+
+
+}
 
 
 .slider {
   display: flex;
-  width: 30%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 1 / 1.2;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
