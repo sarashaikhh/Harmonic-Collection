@@ -181,3 +181,29 @@ p1{
 }
 
 
+
+
+
+/*help w chatgtp*/
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff00;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+
+.gif-container {
+  width: 40%; /* Set the desired width */
+  margin-top: -400px;
+  margin-left: 70px;
+  padding: 20px
+
+}
+
+.gif-container img {
+  width: 100%;
+}
