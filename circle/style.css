@@ -149,7 +149,7 @@ p1{
   margin-left: 60%;
   padding-right: 30px;
   margin-top: -350px;
-text-align: center;
+  text-align: center;
 
 }
 
@@ -179,3 +179,13 @@ text-align: center;
 }
 
 
+.gif-container {
+  width: 500px; /* Set the desired width */
+  margin-top: -500px;
+  margin-left: 70px;
+
+}
+
+.gif-container img {
+  width: 100%;
+}
