@@ -180,9 +180,10 @@ p1{
 
 
 .gif-container {
-  width: 500px; /* Set the desired width */
-  margin-top: -500px;
+  width: 40%; /* Set the desired width */
+  margin-top: -400px;
   margin-left: 70px;
+  padding: 20px
 
 }
 
