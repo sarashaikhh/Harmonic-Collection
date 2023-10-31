@@ -164,8 +164,8 @@ p1{
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 
@@ -186,19 +186,10 @@ p1{
 
 /*help w chatgtp*/
 
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #ffffff00;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
 
 .gif-container {
-  width: 40%; /* Set the desired width */
-  margin-top: -400px;
+  width: 40%; 
+  margin-top: -150px;
   margin-left: 70px;
   padding: 20px
 
