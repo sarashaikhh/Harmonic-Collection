@@ -39,9 +39,9 @@ h2{
   color:#FFFFFF
 }
 
+
 p{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
   padding: 30px;
   font-size: 15px;
@@ -51,7 +51,7 @@ p{
 }
 
 p1{
-  font-family: "evolver-variable", sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-style: normal;
   text-align: center;
   padding-top: 10px;
@@ -60,8 +60,6 @@ p1{
   line-height: 30px;
   color:#FFFFFF
 }
-
-
 
 
 .nav{

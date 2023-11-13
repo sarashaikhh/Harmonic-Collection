@@ -30,17 +30,28 @@ h1{
   color:#FFFFFF
 }
 
+
+
 p{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  padding-left: 30px;
+  padding: 30px;
   font-size: 15px;
   width: 50%;
   line-height: 30px;
   color:#FFFFFF
 }
 
+p1{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  font-style: normal;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color:#FFFFFF
+}
 
 
 
