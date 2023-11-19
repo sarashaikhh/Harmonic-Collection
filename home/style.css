@@ -166,7 +166,7 @@ ul{
 
 
 
-.diamond{
+.rhombus{
   position: absolute;
   transform: scale(0.5); /* Scale down to 50% of its original size */
   left: 1.35%;
@@ -176,14 +176,14 @@ ul{
 }
 
 
-.hover-diamond {
+.hover-rhombus {
   transition: transform 0.3s;
 }
 
-.hover-diamond:hover {
+.hover-rhombus:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('diamond2.png');
+  content: url('rhombus2.png');
 }
 
 

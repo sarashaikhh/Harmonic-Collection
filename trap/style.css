@@ -30,6 +30,16 @@ h1{
   color:#FFFFFF
 }
 
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 5px;
+  color:#FFFFFF
+}
+
 
 
 p{
@@ -55,8 +65,18 @@ p1{
 
 
 
+
+.nav{
+  justify-content: space-between;
+  display: flex;
+  padding: 20px
+
+}
+
+
+
 .trap{
-  width: 30%;
+  width: 32%;
   position: absolute;
   margin-left: 10%;
 }
@@ -100,8 +120,9 @@ p1{
 .formula{
   width: 30%;
   position: absolute;
-  left: 50%;
-  bottom: 35%
+  margin-left: 10%;
+  left: 45%;
+  bottom: 25%
 }
 
 .hover-formula {
@@ -119,22 +140,23 @@ p1{
 
 
 .history{
-  margin-top: 550px;  
+  margin-top: 600px;  
 }
 
 
 .container{
+  width: 30%;
   margin-left: 60%;
   padding-right: 30px;
   margin-top: -450px;
   text-align: center;
 
-}
 
+}
 
 .slider {
   display: flex;
-  aspect-ratio: 1 / 1.2;
+  aspect-ratio: 1/ 1;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -155,117 +177,6 @@ p1{
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  /* Styles for the image container */
-  .image-container {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    display: inline-block;
-    margin-right: -217px;
-    margin-bottom: -216px;
-    
-  }
-  
-  /* Styles for the default image */
-  .default-image, .hover-image {
-    position: absolute;
-  
-  }
-  
-  
-  /* Initially hide the hover image */
-  .hover-image {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Show the hover image on hover */
-  .image-container:hover .hover-image {
-    opacity: 1;
-  }
-  
-  
-
-
-
-
-
-
-
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  padding: 20px;
-  grid-gap: 10px;
-}
-
-
-.menu-item {
-  display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-.menu-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease; /* Add a separate transition for the image */
-}
-
-
-/* Different styles for each link */
-.menu-item:nth-child(1) 
-{ width: 80%; 
-}
-.menu-item:nth-child(2) 
-{ width: 70%; }
-.menu-item:nth-child(3) 
-{ width: 80%; 
-  margin-top: 10px;}
-.menu-item:nth-child(4) 
-{ width: 80%; }
-.menu-item:nth-child(5) 
-{ width: 90%; 
-margin-top: 30px;}
-.menu-item:nth-child(6) 
-{ width: 80%; }
-.menu-item:nth-child(7) 
-{ width: 80%; }
-
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-.menu-item:hover img {
-  transform: scale(1.05);
-}
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 
