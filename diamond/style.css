@@ -181,24 +181,51 @@ p1{
 
 
 
-
-
-
-.shapes {
+.menu-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 20px;
   padding: 20px;
+  grid-gap: 10px;
 }
 
-.item {
-  overflow: hidden;
+
+.menu-item {
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-.img2 {
-  aspect-ratio: 1/1;
+.menu-item img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.3s ease; /* Add a separate transition for the image */
+}
 
+
+/* Different styles for each link */
+.menu-item:nth-child(1) 
+{ width: 80%; 
+}
+.menu-item:nth-child(2) 
+{ width: 70%; }
+.menu-item:nth-child(3) 
+{ width: 80%; 
+  margin-top: 10px;}
+.menu-item:nth-child(4) 
+{ width: 80%; }
+.menu-item:nth-child(5) 
+{ width: 90%; 
+margin-top: 30px;}
+.menu-item:nth-child(6) 
+{ width: 80%; }
+.menu-item:nth-child(7) 
+{ width: 80%; }
+
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
 }

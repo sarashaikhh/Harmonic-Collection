@@ -169,3 +169,55 @@ padding-left: 30px;
 }
 
 
+
+
+
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+
+.menu-item {
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Add a separate transition for the image */
+}
+
+
+/* Different styles for each link */
+.menu-item:nth-child(1) 
+{ width: 80%; 
+}
+.menu-item:nth-child(2) 
+{ width: 70%; }
+.menu-item:nth-child(3) 
+{ width: 80%; 
+  margin-top: 10px;}
+.menu-item:nth-child(4) 
+{ width: 80%; }
+.menu-item:nth-child(5) 
+{ width: 90%; 
+margin-top: 30px;}
+.menu-item:nth-child(6) 
+{ width: 80%; }
+.menu-item:nth-child(7) 
+{ width: 80%; }
+
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
+}
