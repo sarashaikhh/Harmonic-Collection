@@ -75,20 +75,20 @@ p1{
 
 
 
-.diamond{
+.rhombus{
   width: 32%;
   position: absolute;
   margin-left: 10%;
 }
 
-.hover-diamond {
+.hover-rhombus {
   transition: transform 0.3s;
 }
 
-.hover-diamond:hover {
+.hover-rhombus:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('diamond2.png');
+  content: url('rhombus2.png');
 
 }
 
