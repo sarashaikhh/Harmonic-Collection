@@ -1,0 +1,110 @@
+body{
+  background-color: black;
+}
+
+
+ul{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 77px;
+  color:#FFFFFF
+}
+
+
+.nav{
+  justify-content: space-between;
+  display: flex;
+  padding: 20px
+}
+
+
+
+
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+
+.menu-item {
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Different styles for each link */
+.menu-item:nth-child(1) 
+{ width: 80%; 
+}
+.menu-item:nth-child(2) 
+{ width: 70%; }
+.menu-item:nth-child(3) 
+{ width: 80%; 
+  margin-top: 10px;}
+.menu-item:nth-child(4) 
+{ width: 80%; }
+.menu-item:nth-child(5) 
+{ width: 90%; 
+margin-top: 30px;}
+.menu-item:nth-child(6) 
+{ width: 80%; }
+.menu-item:nth-child(7) 
+{ width: 80%; }
+
+.menu-item:nth-child(8) 
+{ width: 80%; }
+
+.menu-item:nth-child(9) 
+{ width: 80%; }
+
+
+
+
+.menu-item:nth-child(1):hover img {
+  content: url('shapes/star.png');
+}
+
+.menu-item:nth-child(2):hover img {
+  content: url('shapes/rhombus.png');
+}
+
+.menu-item:nth-child(3):hover img {
+  content: url('shapes/hex.png');
+}
+
+.menu-item:nth-child(4):hover img {
+  content: url('shapes/square.png');
+}
+
+.menu-item:nth-child(5):hover img {
+  content: url('shapes/trap.png');
+}
+
+.menu-item:nth-child(6):hover img {
+  content: url('shapes/circle.png');
+}
+
+.menu-item:nth-child(7):hover img {
+  content: url('shapes/triangle.png');
+}
+
+
+.menu-item:nth-child(8):hover img {
+  content: url('shapes/heart.png');
+}
+
+
+.menu-item:nth-child(9):hover img {
+  content: url('shapes/spiral.png');
+}
