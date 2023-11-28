@@ -229,3 +229,13 @@ margin-top: 30px;}
 .menu-item:hover img {
   transform: scale(1.05);
 }
+
+
+.gif-container{
+  width: 30%;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  margin-top: -200px;
+  text-align: center;
+}
