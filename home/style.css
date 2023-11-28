@@ -23,479 +23,192 @@ ul{
 
 
 
-
-
-
-
-.square{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 21.93%;
-  right: 61.82%;
-  top: 50.56%;
-  bottom: 20.55%;
-
-}
-
-.hover-square {
-  transition: transform 0.3s;
-}
-
-.hover-square:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('square2.png');
-}
-
-
-
-
-
-
-
-
-
-
-
-.triangle{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 40.14%;
-  right: 39.96%;
-  top: 57.59%;
-  bottom: 11.89%;
-}
-
-.hover-triangle {
-  transition: transform 0.3s;
-}
-
-.hover-triangle:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('triangle2.png');
-}
-
-
-
-
-
-
-
-
-.star{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */  
-  left: 30.05%;
-  right: 51.78%;
-  top: 9.63%;
-  bottom: 59.64%;
-}
-
-.hover-star {
-  transition: transform 0.3s;
-}
-
-.hover-star:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('star2.png');
-}
-
-
-
-
-
-
-
-
-
-
-.hex{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 50%;
-  right: 36.9%;
-  top: 28.8%;
-  bottom: 44.31%;
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-gap: 10px;
+  padding: 50px;
 
 }
 
 
-.hover-hex {
-  transition: transform 0.3s;
+.menu-item {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-.hover-hex:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('hex2.png');
+.menu-item img {
+  width: 100%;
+}
+
+
+/* Different styles for each link */
+.menu-item:nth-child(1) 
+{ width: 80%; 
+}
+.menu-item:nth-child(2) 
+{ width: 80%; 
+}
+.menu-item:nth-child(3) 
+{ width: 80%; 
+}
+.menu-item:nth-child(4) 
+{ width: 80%; }
+.menu-item:nth-child(5) 
+{ width: 90%; 
+}
+.menu-item:nth-child(6) 
+{ width: 80%; }
+.menu-item:nth-child(7) 
+{ width: 80%; }
+
+.menu-item:nth-child(8) 
+{ width: 80%; }
+
+.menu-item:nth-child(9) 
+{ width: 80%; }
+
+
+
+
+.menu-item:nth-child(1):hover img {
+  content: url('shapes/star.png');
+}
+
+.menu-item:nth-child(2):hover img {
+  content: url('shapes/rhombus.png');
+}
+
+.menu-item:nth-child(3):hover img {
+  content: url('shapes/hex.png');
+}
+
+.menu-item:nth-child(4):hover img {
+  content: url('shapes/square.png');
+}
+
+.menu-item:nth-child(5):hover img {
+  content: url('shapes/trap.png');
+}
+
+.menu-item:nth-child(6):hover img {
+  content: url('shapes/circle.png');
+}
+
+.menu-item:nth-child(7):hover img {
+  content: url('shapes/triangle.png');
+}
+
+
+.menu-item:nth-child(8):hover img {
+  content: url('shapes/heart.png');
+}
+
+
+.menu-item:nth-child(9):hover img {
+  content: url('shapes/spiral.png');
 }
 
 
 
 
-
-
-
-
-
-.spiral{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 66.3%;
-  right: 17.9%;
-  top: 3.06%;
-  bottom: 70.09%;
-
-}
-
-.hover-spiral {
-  transition: transform 0.3s;
-}
-
-.hover-spiral:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('spiral2.png');
-}
-
-
-
-
-
-
-
-.rhombus{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 1.35%;
-  right: 76.14%;
-  top: 15.19%;
-  bottom: 42.39%;  
-}
-
-
-.hover-rhombus {
-  transition: transform 0.3s;
-}
-
-.hover-rhombus:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('rhombus2.png');
-}
-
-
-
-
-
-
-
-
-
-
-.trap{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 65.42%;
-  right: 5.54%;
-  top: 42.13%;
-  bottom: 42.39%;
-}
-
-
-.hover-trap {
-  transition: transform 0.3s;
-}
-
-.hover-trap:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('trap2.png');
-}
-
-
-
-
-
-
-
-
-
-
-
-.circle{
-  position: absolute;
-  transform: scale(0.5); /* Scale down to 50% of its original size */
-  left: 63.07%;
-  right: 18.76%;
-  top: 63.33%;
-  bottom: 4.36%;  
-}
-
-
-.hover-circle {
-  transition: transform 0.3s;
-}
-
-.hover-circle:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('circle2.png');
-}
-
-
-
-
-
-
-
-
-/* Phone breakpoint */
-@media (min-width: 80px) {
-
-  body{
-    background-color: black;
-    height: 250%; 
-  }
-  
-  
-.circle{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 205.6%;
-  bottom: 22.8%;
-}
-
-
-.diamond{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 55.98%;
-  bottom: 50.43%;
-  
-}
-
-
-
-.star{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 2.16%;
-  bottom: 30.25%;
-  
-}
-
-
-.hex{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 109.6%;
-  bottom: 22.8%;
-}
-
-
-.triangle{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 248.6%;
-  bottom: 22.8%;
-}
-
-.square{
-  position: absolute;
-  left: 20.82%;
-  right: 28.53%;
-  top: 145.6%;
-  bottom: 22.8%;
-
-}
-
-
-.trap{
-  position: absolute;
-  left: 17.82%;
-  right: 28.53%;
-  top: 182.6%;
-  bottom: 22.8%;
+@media screen and (max-width: 768px) {
+
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(1, 9fr);
+    grid-gap: 20px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;  
   }
 
-  
-}
 
-
-
-
-
-
-
-
-/* Tablet breakpoint */
-@media (min-width: 768px) {
-  body{
-    background-color: black;
-    height: 100%; 
+  .menu-item:nth-child(1) 
+  { width: 90%; 
   }
-
-  .square{
-
-    position: absolute;
-    left: 31.93%;
-    right: 61.82%;
-    top: 60.56%;
-    bottom: 20.55%;
-  }
-  
-  
-  .triangle{
-    position: absolute;
-    left: 10.14%;
-    right: 79.96%;
-    top: 95.59%;
-    bottom: 11.89%;
-  }
-  
-  .star{
-    position: absolute;
-    left: 30.05%;
-    right: 51.78%;
-    top: 9.63%;
-    bottom: 59.64%;
-  }
-  
-  
-  .hex{
-    position: absolute;
-    left: 60%;
-    right: 36.9%;
-    top: 28.8%;
-    bottom: 20.31%;
-  
-  }
-  
-  
-  .diamond{
-    position: absolute;
-    left: 1.35%;
-    right: 76.14%;
-    top: 15.19%;
-    bottom: 42.39%;  
-  }
-  
-  
-  
-  .trap{
-    position: absolute;
-    left: 65.42%;
-    right: 5.54%;
-    top: 70.13%;
-    bottom: 14%;
-  }
-  
-  
-  
-  .circle{
-    position: absolute;
-    left: 53.07%;
-    right: 78.76%;
-    top: 95.33%;
-    bottom: 4.36%;  
-  }
-  
-  
-  
-  
+  .menu-item:nth-child(2) 
+  { width: 80%; 
+    margin-left: 5%;
     
+
+  }
+  .menu-item:nth-child(3) 
+  { width: 80%; 
+    margin-left: 5%;
+    padding-top: 10%;
+
+  }
+  .menu-item:nth-child(4) 
+  { width: 70%; 
+    margin-left: 10%;
+    padding-top: 10%;
+
+  }
+  .menu-item:nth-child(5) 
+  { width: 100%; 
+    margin-left: -5%;
+    padding-top: 10%;
+
+  }
+  .menu-item:nth-child(6) 
+  { width: 80%; 
+    margin-left: 5%;
+    padding-top: 10%;
+
+  }
+  .menu-item:nth-child(7) 
+  { width: 80%; 
+    margin-left: 5%;
+    padding-top: 5%;
+
   }
   
+  .menu-item:nth-child(8) 
+  { width: 80%; 
+    margin-left: 5%;
+    padding-top: 10%;
+  }
   
+  .menu-item:nth-child(9) 
+  { width: 90%; }
 
-/* Desktop breakpoint */
-@media (min-width: 992px) {
 
-  body{
-    background-color: black;
-    height: 100%; 
+
+
+/* Media query for medium screens */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 10px;
+    padding: 50px;
+  
   }
 
-.square{
-
-  position: absolute;
-  left: 21.93%;
-  right: 61.82%;
-  top: 50.56%;
-  bottom: 20.55%;
-}
-
-
-.triangle{
-  position: absolute;
-  left: 40.14%;
-  right: 39.96%;
-  top: 70.59%;
-  bottom: 11.89%;
-}
-
-.star{
-  position: absolute;
-  left: 30.05%;
-  right: 51.78%;
-  top: 9.63%;
-  bottom: 59.64%;
-}
-
-
-.hex{
-  position: absolute;
-  left: 50%;
-  right: 36.9%;
-  top: 28.8%;
-  bottom: 20.31%;
-
-}
-
-
-.diamond{
-  position: absolute;
-  left: 1.35%;
-  right: 76.14%;
-  top: 15.19%;
-  bottom: 42.39%;  
-}
-
-
-
-.trap{
-  position: absolute;
-  left: 65.42%;
-  right: 5.54%;
-  top: 42.13%;
-  bottom: 42.39%;
-}
-
-
-
-.circle{
-  position: absolute;
-  width: 100px;
-  left: 63.07%;
-  right: 18.76%;
-  top: 63.33%;
-  bottom: 4.36%;  
-}
-
-
-
-
+  .menu-item:nth-child(1) 
+  { width: 80%; 
+  }
+  .menu-item:nth-child(2) 
+  { width: 80%; 
+  }
+  .menu-item:nth-child(3) 
+  { width: 80%; 
+  }
+  .menu-item:nth-child(4) 
+  { width: 80%; }
+  .menu-item:nth-child(5) 
+  { width: 90%; 
+  }
+  .menu-item:nth-child(6) 
+  { width: 80%; }
+  .menu-item:nth-child(7) 
+  { width: 80%; }
   
+  .menu-item:nth-child(8) 
+  { width: 80%; }
+  
+  .menu-item:nth-child(9) 
+  { width: 80%; }
+
 }
-
-
-
-
+}
