@@ -26,7 +26,6 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  padding-left: 40px;
   color:#FFFFFF
 }
 h2{
@@ -35,18 +34,14 @@ h2{
   text-align: center;
   font-weight: 400;
   font-size: 25px;
-  padding: 5px;
   color:#FFFFFF
 }
-
 
 
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  padding: 30px;
   font-size: 15px;
-  width: 50%;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -73,19 +68,27 @@ p1{
 
 
 .circle{
-  width: 30%;
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-top: 3%;
+
 }
 
-.hover-circle {
+
+.circle img{
+  width: 100%;
+  position: absolute;
+}
+
+.hover-star {
   transition: transform 0.3s;
 }
 
-.hover-circle:hover {
+.hover-star:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('circle2.png');
+  content: url('star2.png');
 
 }
 
@@ -94,9 +97,13 @@ p1{
 
 .def{
   position: absolute;
-  left: 40%;  
-  bottom: 10%;
+  margin-left: 38%;  
+  width: 35%;
+}
 
+.def img{
+  position: absolute;
+  width: 100%;
 }
 
 .hover-def {
@@ -115,10 +122,17 @@ p1{
 
 
 .formula{
-  width: 20%;
+  width: 40%;
   position: absolute;
-  left: 55%;
-  top: 90%
+  margin-left: 50%;
+  margin-top: 33%;
+
+
+}
+
+.formula img{
+  width: 40%;
+  position: absolute;
 }
 
 .hover-formula {
@@ -135,21 +149,20 @@ p1{
 
 
 
-.history{
 
-  margin-top: 600px;  
+.history {
+  margin-top: 50%;
+  width: 40%;
+  float: left;
+  padding-left: 5%;
+
 }
 
-
-
-
-
-.container{
-  margin-left: 60%;
-  padding-right: 30px;
-  margin-top: -350px;
-  text-align: center;
-
+.art {
+  margin-top: 50%;
+  width: 40%;
+  float: right;
+  padding-right: 5%;
 }
 
 
@@ -161,12 +174,12 @@ p1{
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 
-/*help w chatgtp*/
+
 
 .slider-nav a {
   width: 0.5rem;
@@ -178,11 +191,15 @@ p1{
 }
 
 
+
+
+
+/*help w chatgtp*/
+
+
 .gif-container {
-  width: 40%; /* Set the desired width */
-  margin-top: -500px;
-  margin-left: 70px;
-  padding: 20px
+  width: 40%; 
+  margin-bottom: 10%;  
 
 }
 
@@ -196,9 +213,10 @@ p1{
 
 
 
+
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   padding: 20px;
   grid-gap: 10px;
 }

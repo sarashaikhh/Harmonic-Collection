@@ -26,7 +26,6 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  padding-left: 40px;
   color:#FFFFFF
 }
 h2{
@@ -35,7 +34,6 @@ h2{
   text-align: center;
   font-weight: 400;
   font-size: 25px;
-  padding: 5px;
   color:#FFFFFF
 }
 
@@ -43,9 +41,7 @@ h2{
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  padding: 10px;
   font-size: 15px;
-  width: 50%;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -72,9 +68,17 @@ p1{
 
 
 .star{
-  width: 30%;
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-top: 3%;
+
+}
+
+
+.star img{
+  width: 100%;
+  position: absolute;
 }
 
 .hover-star {
@@ -92,12 +96,14 @@ p1{
 
 
 .def{
-  width: 383px;
-  height: 412px;
   position: absolute;
-  margin-left: 40%;  
-  margin-top: 1.5%;
-  width: 30%;
+  margin-left: 38%;  
+  width: 35%;
+}
+
+.def img{
+  position: absolute;
+  width: 100%;
 }
 
 .hover-def {
@@ -116,10 +122,17 @@ p1{
 
 
 .formula{
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
-  left: 35%;
-  bottom: 1%
+  margin-left: 50%;
+  margin-top: 40%;
+
+
+}
+
+.formula img{
+  width: 40%;
+  position: absolute;
 }
 
 .hover-formula {
@@ -136,21 +149,19 @@ p1{
 
 
 
-.history{
+.history {
+  margin-top: 50%;
+  width: 40%;
+  float: left;
+  padding-left: 5%;
 
-  margin-top: 600px;  
 }
 
-
-
-
-
-.container{
-  margin-left: 60%;
-  padding-right: 30px;
-  margin-top: -650px;
-  text-align: center;
-
+.art {
+  margin-top: 50%;
+  width: 40%;
+  float: right;
+  padding-right: 5%;
 }
 
 
@@ -187,9 +198,7 @@ p1{
 
 .gif-container {
   width: 40%; 
-  margin-top: -150px;
-  margin-left: 70px;
-  padding: 20px
+  margin-bottom: 10%;  
 
 }
 
@@ -206,7 +215,7 @@ p1{
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   padding: 20px;
   grid-gap: 10px;
 }
