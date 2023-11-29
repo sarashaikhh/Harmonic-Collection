@@ -81,11 +81,11 @@ p1{
   position: absolute;
 }
 
-.heart-star {
+.hover-star {
   transition: transform 0.3s;
 }
 
-.hover-heart:hover {
+.hover-star:hover {
   transform: scale(1.1);
   /* Change the image on hover */
   content: url('star2.png');
