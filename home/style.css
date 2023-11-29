@@ -116,6 +116,8 @@ ul{
     grid-template-columns: repeat(1, minmax(0, 9fr));
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap
   }
 
   .menu-item {
