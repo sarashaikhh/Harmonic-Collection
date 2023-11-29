@@ -76,19 +76,19 @@ p1{
 }
 
 
-.star img{
+.heart img{
   width: 100%;
   position: absolute;
 }
 
-.heart-star {
+.hover-heart {
   transition: transform 0.3s;
 }
 
 .hover-heart:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('star2.png');
+  content: url('heart.png');
 
 }
 

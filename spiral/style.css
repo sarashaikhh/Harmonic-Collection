@@ -67,7 +67,7 @@ p1{
 
 
 
-.heart{
+.spiral{
   width: 40%;
   position: absolute;
   margin-left: 5%;
@@ -76,19 +76,19 @@ p1{
 }
 
 
-.star img{
+.spiral img{
   width: 100%;
   position: absolute;
 }
 
-.heart-star {
+.hover-spiral {
   transition: transform 0.3s;
 }
 
-.hover-heart:hover {
+.hover-spiral:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('star2.png');
+  content: url('spiral.png');
 
 }
 
