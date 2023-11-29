@@ -1,13 +1,6 @@
 
 
 
-.slideshow {
-  width: 100%;
-  display: flex;
-  aspect-ratio: 1 / 1;
-  overflow-x: auto;
-}
-
 
 
 
@@ -178,6 +171,8 @@ p1{
 }
 
 
+
+
 .slider {
   display: flex;
   aspect-ratio: 1 / 1;
@@ -210,7 +205,8 @@ p1{
 
 
 .gif-container {
-  width: 40%; 
+  width: 40%;
+
   margin-bottom: 10%;  
 
 }
@@ -218,7 +214,6 @@ p1{
 .gif-container img {
   width: 100%;
 }
-
 
 
 
