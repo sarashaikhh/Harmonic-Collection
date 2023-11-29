@@ -1,3 +1,16 @@
+
+
+
+.slideshow {
+  width: 100%;
+  display: flex;
+  aspect-ratio: 1 / 1;
+  overflow-x: auto;
+}
+
+
+
+
 body{
   background-color: black;
 
@@ -26,7 +39,6 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  padding-left: 40px;
   color:#FFFFFF
 }
 h2{
@@ -35,18 +47,14 @@ h2{
   text-align: center;
   font-weight: 400;
   font-size: 25px;
-  padding: 5px;
   color:#FFFFFF
 }
-
 
 
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  padding: 30px;
   font-size: 15px;
-  width: 50%;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -63,8 +71,6 @@ p1{
 }
 
 
-
-
 .nav{
   justify-content: space-between;
   display: flex;
@@ -74,13 +80,18 @@ p1{
 
 
 
-
 .square{
-  width: 32%;
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
-  margin-top: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
 
+}
+
+
+.square img{
+  width: 100%;
+  position: absolute;
 }
 
 .hover-square {
@@ -99,9 +110,13 @@ p1{
 
 .def{
   position: absolute;
-  margin-left: 40%;  
-  margin-bottom: 1.5%;
+  margin-left: 38%;  
+  width: 35%;
+}
 
+.def img{
+  position: absolute;
+  width: 100%;
 }
 
 .hover-def {
@@ -117,11 +132,20 @@ p1{
 
 
 
+
+
 .formula{
-  width: 30%;
+  width: 40%;
   position: absolute;
-  left: 55%;
-  top: 85%
+  margin-left: 50%;
+  margin-top: 40%;
+
+
+}
+
+.formula img{
+  width: 40%;
+  position: absolute;
 }
 
 .hover-formula {
@@ -138,30 +162,44 @@ p1{
 
 
 
-
-.history{
-
-  margin-top: 600px;  
-}
-
-
-
-
-
-.container{
-  margin-left: 60%;
-  padding-right: 30px;
-  margin-top: -450px;
-  text-align: center;
+.history {
+  margin-top: 50%;
+  width: 40%;
+  float: left;
+  padding-left: 5%;
 
 }
 
+.art {
+  margin-top: 50%;
+  width: 40%;
+  float: right;
+  padding-right: 5%;
+}
 
-.slideshow {
-  width: 100%;
+
+.slider {
   display: flex;
   aspect-ratio: 1 / 1;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff00;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
 }
 
 
@@ -173,16 +211,13 @@ p1{
 
 .gif-container {
   width: 40%; 
-  margin-top: -250px;
-  margin-left: 70px;
-  padding: 20px
+  margin-bottom: 10%;  
 
 }
 
 .gif-container img {
   width: 100%;
 }
-
 
 
 
@@ -230,10 +265,7 @@ margin-top: 30px;}
 { width: 80%; }
 .menu-item:nth-child(7) 
 { width: 80%; }
-.menu-item:nth-child(8) 
-{ width: 80%; }
-.menu-item:nth-child(9) 
-{ width: 80%; }
+
 
 .menu-item:hover {
   transform: scale(1.05);
