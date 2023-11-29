@@ -112,103 +112,56 @@ ul{
 
 
 @media screen and (max-width: 768px) {
-
   .menu-container {
-    display: grid;
-    grid-template-columns: repeat(1, 9fr);
-    grid-gap: 20px;
-    padding: 50px;
+    grid-template-columns: repeat(1, minmax(0, 9fr));
     justify-content: center;
-    align-items: center;  
+    align-items: center;
   }
 
-
-  .menu-item:nth-child(1) 
-  { width: 90%; 
-  }
-  .menu-item:nth-child(2) 
-  { width: 80%; 
-    margin-left: 5%;
-    
-
-  }
-  .menu-item:nth-child(3) 
-  { width: 80%; 
+  .menu-item {
+    width: 90%;
     margin-left: 5%;
     padding-top: 10%;
-
   }
-  .menu-item:nth-child(4) 
-  { width: 70%; 
-    margin-left: 10%;
-    padding-top: 10%;
 
+  .menu-item:nth-child(1) {
+    width: 90%;
   }
-  .menu-item:nth-child(5) 
-  { width: 100%; 
+
+  .menu-item:nth-child(2),
+  .menu-item:nth-child(3),
+  .menu-item:nth-child(4),
+  .menu-item:nth-child(6),
+  .menu-item:nth-child(7),
+  .menu-item:nth-child(8) {
+    width: 80%;
+  }
+
+
+  .menu-item:nth-child(5) {
+    width: 100%;
     margin-left: -5%;
-    padding-top: 10%;
-
   }
-  .menu-item:nth-child(6) 
-  { width: 80%; 
-    margin-left: 5%;
-    padding-top: 10%;
 
+  .menu-item:nth-child(9) {
+    width: 90%;
   }
-  .menu-item:nth-child(7) 
-  { width: 80%; 
-    margin-left: 5%;
-    padding-top: 5%;
+}
 
-  }
-  
-  .menu-item:nth-child(8) 
-  { width: 80%; 
-    margin-left: 5%;
-    padding-top: 10%;
-  }
-  
-  .menu-item:nth-child(9) 
-  { width: 90%; }
-
-
-
-
-/* Media query for medium screens */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .menu-container {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-gap: 10px;
-    padding: 50px;
-  
+    grid-template-columns: repeat(3, minmax(0, 3fr));
+  }
+ 
+
+  .menu-item:nth-child(3) {
+    margin-top: 15%;
   }
 
-  .menu-item:nth-child(1) 
-  { width: 80%; 
+  .menu-item:nth-child(5) {
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 15%;
   }
-  .menu-item:nth-child(2) 
-  { width: 80%; 
-  }
-  .menu-item:nth-child(3) 
-  { width: 80%; 
-  }
-  .menu-item:nth-child(4) 
-  { width: 80%; }
-  .menu-item:nth-child(5) 
-  { width: 90%; 
-  }
-  .menu-item:nth-child(6) 
-  { width: 80%; }
-  .menu-item:nth-child(7) 
-  { width: 80%; }
-  
-  .menu-item:nth-child(8) 
-  { width: 80%; }
-  
-  .menu-item:nth-child(9) 
-  { width: 80%; }
 
-}
 }
