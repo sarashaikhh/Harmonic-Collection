@@ -26,28 +26,22 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  padding: 40px;
   color:#FFFFFF
 }
-
 h2{
   font-family: "evolver-variable", sans-serif;
   font-style: normal;
   text-align: center;
   font-weight: 400;
   font-size: 25px;
-  padding: 5px;
   color:#FFFFFF
 }
-
 
 
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  padding: 30px;
   font-size: 15px;
-  width: 50%;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -64,8 +58,6 @@ p1{
 }
 
 
-
-
 .nav{
   justify-content: space-between;
   display: flex;
@@ -76,16 +68,24 @@ p1{
 
 
 .rhombus{
-  width: 32%;
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-top: 3%;
+
 }
 
-.hover-rhombus {
+
+.rhombus img{
+  width: 100%;
+  position: absolute;
+}
+
+.hover-star {
   transition: transform 0.3s;
 }
 
-.hover-rhombus:hover {
+.hover-star:hover {
   transform: scale(1.1);
   /* Change the image on hover */
   content: url('rhombus2.png');
@@ -97,9 +97,13 @@ p1{
 
 .def{
   position: absolute;
-  margin-left: 40%;  
-  margin-top: 1.5%;
+  margin-left: 38%;  
+  width: 35%;
+}
 
+.def img{
+  position: absolute;
+  width: 100%;
 }
 
 .hover-def {
@@ -118,11 +122,17 @@ p1{
 
 
 .formula{
-  width: 30%;
+  width: 40%;
   position: absolute;
-  margin-left: 10%;
-  left: 45%;
-  bottom: 25%
+  margin-left: 50%;
+  margin-top: 33%;
+
+
+}
+
+.formula img{
+  width: 40%;
+  position: absolute;
 }
 
 .hover-formula {
@@ -139,31 +149,33 @@ p1{
 
 
 
-.history{
-  margin-top: 600px;  
-}
 
-
-.container{
-  width: 30%;
-  margin-left: 60%;
-  padding-right: 30px;
-  margin-top: -450px;
-  text-align: center;
-
+.history {
+  margin-top: 50%;
+  width: 40%;
+  float: left;
+  padding-left: 5%;
 
 }
+
+.art {
+  margin-top: 50%;
+  width: 40%;
+  float: right;
+  padding-right: 5%;
+}
+
 
 .slider {
   display: flex;
-  aspect-ratio: 1/ 1;
+  aspect-ratio: 1 / 1;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 
@@ -181,9 +193,30 @@ p1{
 
 
 
+
+/*help w chatgtp*/
+
+
+.gif-container {
+  width: 40%; 
+  margin-bottom: 10%;  
+
+}
+
+.gif-container img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   padding: 20px;
   grid-gap: 10px;
 }
@@ -220,10 +253,7 @@ margin-top: 30px;}
 { width: 80%; }
 .menu-item:nth-child(7) 
 { width: 80%; }
-.menu-item:nth-child(8) 
-{ width: 80%; }
-.menu-item:nth-child(9) 
-{ width: 80%; }
+
 
 .menu-item:hover {
   transform: scale(1.05);
@@ -231,14 +261,4 @@ margin-top: 30px;}
 
 .menu-item:hover img {
   transform: scale(1.05);
-}
-
-
-.gif-container{
-  width: 30%;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  margin-top: -200px;
-  text-align: center;
 }

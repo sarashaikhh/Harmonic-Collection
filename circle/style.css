@@ -88,7 +88,7 @@ p1{
 .hover-star:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('star2.png');
+  content: url('circle2.png');
 
 }
 
