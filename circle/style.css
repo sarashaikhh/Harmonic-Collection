@@ -88,7 +88,7 @@ p1{
 .hover-circle:hover {
   transform: scale(1.1);
   /* Change the image on hover */
-  content: url('circle2.png');
+  content: url('circle.png');
 
 }
 
@@ -125,7 +125,7 @@ p1{
   width: 40%;
   position: absolute;
   margin-left: 50%;
-  margin-top: 33%;
+  margin-top: 40%;
 
 
 }
@@ -145,7 +145,6 @@ p1{
   content: url('formula2.png');
 
 }
-
 
 
 
