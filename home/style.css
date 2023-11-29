@@ -26,14 +26,14 @@ ul{
 .menu-container {
   display: grid;
   grid-template-columns: repeat(5, 2fr);
-  grid-gap: 10px;
+  grid-gap: 40px;
   padding: 50px;
-
 }
 
 
 .menu-item {
   transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
+  
 }
 
 .menu-item img {
@@ -71,40 +71,58 @@ ul{
 
 
 .menu-item:nth-child(1):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/star.png');
 }
 
 .menu-item:nth-child(2):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/rhombus.png');
 }
 
 .menu-item:nth-child(3):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/hex.png');
 }
 
 .menu-item:nth-child(4):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/square.png');
 }
 
 .menu-item:nth-child(5):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/trap.png');
 }
 
 .menu-item:nth-child(6):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/circle.png');
 }
 
 .menu-item:nth-child(7):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/triangle.png');
 }
 
 
 .menu-item:nth-child(8):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/heart.png');
 }
 
 
 .menu-item:nth-child(9):hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
   content: url('shapes/spiral.png');
 }
 
@@ -195,9 +213,22 @@ ul{
     width: 90%;
   }
 
-  .menu-item:nth-child(2),
-  .menu-item:nth-child(3),
-  .menu-item:nth-child(4),
+  .menu-item:nth-child(2)
+  {
+    width: 80%;
+  }
+  .menu-item:nth-child(3)
+  {
+    width: 80%;
+  }
+  .menu-item:nth-child(4)
+  {
+    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+  }
+
   .menu-item:nth-child(6),
   .menu-item:nth-child(7),
   .menu-item:nth-child(8) {
@@ -208,9 +239,14 @@ ul{
   .menu-item:nth-child(5) {
     width: 100%;
     margin-left: -5%;
+    margin-top: -3%;
+
   }
 
   .menu-item:nth-child(9) {
     width: 90%;
+    margin-top: -3%;
+    margin-left: 1%;
+
   }
 }
