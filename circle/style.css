@@ -1,6 +1,8 @@
 .box {
   position: relative;
   padding-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Adjusted margin to add space below the box */
 }
 
 .draw {
@@ -10,14 +12,12 @@
   border: 2px solid #fff;
   overflow: hidden;
   margin-bottom: 35px; /* Adjusted margin to add space below the box */
-
 }
 
-.title{
+.title {
   position: relative;
   width: 50%;
   overflow: hidden;
-  
 }
 
 .draw img {
@@ -29,9 +29,6 @@
   margin: 0;
   margin-bottom: 10px; /* Added margin to move the heading 10px above the white box */
 }
-
-
-
 
 .def {
   background-color: black;
@@ -208,6 +205,7 @@ p1{
 
 }
 
+
 .art {
   margin-top: 40%;
   width: 40%;
@@ -225,8 +223,6 @@ p1{
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
-
-
 
 
 .slider-nav a {

@@ -197,7 +197,8 @@ p1{
 
 
 .history {
-  margin-top: 35%;
+  margin-top: 40%;
+  margin-bottom: 10%;
   width: 40%;
   float: left;
   padding-left: 5%;
@@ -234,23 +235,6 @@ p1{
   background-color: #ffffff00;
   opacity: 0.75;
   transition: opacity ease 250ms;
-}
-
-
-
-
-
-/*help w chatgtp*/
-
-
-.gif-container {
-  width: 40%; 
-  margin-bottom: 10%;  
-
-}
-
-.gif-container img {
-  width: 100%;
 }
 
 
