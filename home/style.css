@@ -195,6 +195,10 @@ ul{
     margin-top: 15%;
   }
 
+  .nav ul{
+    font-size: 30px;
+  }
+
 }
 
 /* phone */
@@ -233,6 +237,10 @@ ul{
 
   .menu-item:nth-child(9) {
     width: 90%;
+  }
+
+  .nav ul{
+    font-size: 20px;
   }
 }
 
@@ -295,5 +303,9 @@ ul{
     margin-top: -3%;
     margin-left: 1%;
 
+  }
+
+  .nav ul{
+    font-size: 20px;
   }
 }
