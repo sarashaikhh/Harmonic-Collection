@@ -1,3 +1,37 @@
+.box {
+  position: relative;
+  padding-left: 5%;
+  margin-bottom: 35px; /* Adjusted margin to add space below the box */
+}
+
+.draw {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.title{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  
+}
+
+.draw img {
+  width: 40px;
+  position: absolute;
+}
+
+.box h3 {
+  margin: 0;
+  margin-bottom: 10px; /* Added margin to move the heading 10px above the white box */
+}
+
+
+
+
 .def {
   background-color: black;
   padding: 10px; 
@@ -166,6 +200,7 @@ p1{
 
 .history {
   margin-top: 40%;
+  margin-bottom: 10%;
   width: 40%;
   float: left;
   padding-left: 5%;
