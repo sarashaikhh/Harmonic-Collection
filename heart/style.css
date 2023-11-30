@@ -55,6 +55,11 @@
   .def textarea {
     font-size: 14px;
   }
+
+
+  .history h1{
+    font-size: 30px;
+  }
 }
 
 /* Media Query for screens with a maximum width of 800px */
@@ -77,6 +82,10 @@
 
   .def textarea {
     font-size: 12px;
+  }
+
+  .history h1{
+    font-size: 20px;
   }
 }
 
