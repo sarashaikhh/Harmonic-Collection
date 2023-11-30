@@ -220,6 +220,8 @@ p1{
 
 
 
+
+
 #slider-container {
   position: relative;
   width: 80%;
@@ -263,26 +265,6 @@ p1{
 #next {
   right: 30px;
 }
-
-
-
-
-
-
-/*help w chatgtp*/
-
-
-.gif-container {
-  width: 40%; 
-  margin-bottom: 10%;  
-
-}
-
-.gif-container img {
-  width: 100%;
-}
-
-
 
 
 

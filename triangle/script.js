@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
@@ -61,4 +62,3 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.style.transform = 'translateX(' + translateValue + ')';
   }
 });
-
