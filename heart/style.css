@@ -3,8 +3,8 @@
   padding: 10px; 
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
-  width: 35%; 
-  height: 45%;
+  width: 500px; 
+  height: 350px;
   margin-left: 38%; 
   position: absolute;
   color: white; 
@@ -21,6 +21,7 @@
 .def h3,
 .def p {
   color: inherit; 
+  
 }
 
 .def textarea {
@@ -31,139 +32,6 @@
   outline: none;
   background-color: transparent;
   color: inherit; 
-}
-
-@media screen and (max-width: 1000px) {
-  .def {
-    width: 35%;
-    height: 35%;
-    margin-left: 35%;
-  }
-
-  .def h1 {
-    font-size: 20px;
-  }
-
-  .def h3 {
-    font-size: 16px;
-  }
-
-  .def p {
-    font-size: 14px;
-  }
-
-  .def textarea {
-    font-size: 14px;
-  }
-
-
-  .history h1{
-    font-size: 30px;
-  }
-}
-
-/* Media Query for screens with a maximum width of 800px */
-@media screen and (max-width: 900px) {
-  .def {
-    width: 45%;
-    height: 35%;  }
-
-  .def h1 {
-    font-size: 18px;
-  }
-
-  .def h3 {
-    font-size: 14px;
-  }
-
-  .def p {
-    font-size: 12px;
-  }
-
-  .def textarea {
-    font-size: 12px;
-  }
-
-  .history h1{
-    font-size: 20px;
-  }
-}
-
-
-/* Media Query for screens with a maximum width of 800px */
-@media screen and (max-device-width: 800px) {
-  .def {
-    width: 45%;
-    height: 25%;  }
-
-  .def h1 {
-    font-size: 18px;
-  }
-
-  .def h3 {
-    font-size: 14px;
-  }
-
-  .def p {
-    font-size: 12px;
-  }
-
-  .def textarea {
-    font-size: 12px;
-  }
-}
-
-
-
-
-
-/* Media Query for screens with a maximum width of 600px */
-@media screen and (max-device-width: 769px) {
-  .def {
-    width: 35%;
-    height: 22%;
-  }
-
-  .def h1 {
-    font-size: 16px;
-  }
-
-  .def h3 {
-    font-size: 12px;
-  }
-
-  .def p {
-    font-size: 10px;
-  }
-
-  .def textarea {
-    font-size: 10px;
-  }
-}
-
-
-/* Media Query for screens with a maximum width of 600px */
-@media screen and (max-device-width: 600px) {
-  .def {
-    width: 35%;
-    height: 20%;
-  }
-
-  .def h1 {
-    font-size: 16px;
-  }
-
-  .def h3 {
-    font-size: 12px;
-  }
-
-  .def p {
-    font-size: 10px;
-  }
-
-  .def textarea {
-    font-size: 10px;
-  }
 }
 
 
