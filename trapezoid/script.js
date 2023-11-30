@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create an image element
     const image = document.createElement('img');
-    image.src = 'hex.png'; // Replace 'hex.png' with the actual image URL
+    image.src = 'trap.png'; // Replace 'hex.png' with the actual image URL
 
     // Generate random width and height for the image (you can adjust the range as needed)
     const randomWidth = Math.floor(Math.random() * 100) + 20; // Random width between 20 and 120 pixels
