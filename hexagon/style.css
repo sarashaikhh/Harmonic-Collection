@@ -217,7 +217,6 @@ p1{
 
 
 
-
 #slider-container {
   position: relative;
   width: 80%;
@@ -237,21 +236,21 @@ p1{
 }
 
 .slide img {
+  aspect-ratio: 1/1;
   width: 100%;
   height: auto;
-  aspect-ratio: 1/1;
 }
 
 #prev,
 #next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   font-size: 24px;
   cursor: pointer;
   color: white;
   padding: 10px;
   border: none;
+  z-index: 1; /* Ensure arrows are above the slides */
 }
 
 #prev {

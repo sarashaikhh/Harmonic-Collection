@@ -32,10 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
   const slider = document.getElementById('image-slider');
+  const slides = document.querySelectorAll('.slide');
 
   let currentIndex = 0;
 
@@ -43,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (currentIndex > 0) {
       currentIndex--;
     } else {
-      currentIndex = slider.children.length - 1;
+      currentIndex = slides.length - 1;
     }
     updateSlider();
   });
 
   nextBtn.addEventListener('click', function () {
-    if (currentIndex < slider.children.length - 1) {
+    if (currentIndex < slides.length - 1) {
       currentIndex++;
     } else {
       currentIndex = 0;
