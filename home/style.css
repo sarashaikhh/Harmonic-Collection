@@ -43,13 +43,15 @@ ul{
 
 /* Different styles for each link */
 .menu-item:nth-child(1) 
-{ width: 80%; 
+{ 
+  width: 80%; 
 }
 .menu-item:nth-child(2) 
 { width: 80%; 
 }
 .menu-item:nth-child(3) 
-{ width: 80%; 
+{ margin-bottom: 40%;
+  width: 80%; 
 }
 .menu-item:nth-child(4) 
 { width: 80%; }
@@ -128,8 +130,53 @@ ul{
 
 
 
+/* computer */
+
+@media screen and (min-width: 1200px) {
+
+  .menu-item:nth-child(1) 
+  { margin-left: 30%;
+    margin-top: -5%;
+    width: 80%; 
+  }
+  .menu-item:nth-child(2) 
+  { margin-left: 30%;
+    margin-top: 5%;
+    width: 80%; 
+  }
+  .menu-item:nth-child(3) 
+  { margin-top: -20%;
+    width: 80%; 
+  }
+  .menu-item:nth-child(4) 
+  { margin-left: -10%;
+    margin-top: 20%;
+    width: 80%;}
+  .menu-item:nth-child(5) 
+  { margin-left: -10%;
+    margin-top: 20%;
+    width: 80%; 
+  }
+  .menu-item:nth-child(6) 
+  { margin-left: 40%;
+    margin-top: -40%;
+    width: 80%; }
+  .menu-item:nth-child(7) 
+  { margin-left: 50%;
+    width: 80%; }
+  
+  .menu-item:nth-child(8) 
+  { margin-left: 20%;
+    margin-top: -40%;
+    width: 80%; }
+  
+  .menu-item:nth-child(9) 
+  { margin-left: 40%;
+    margin-top: -30%;
+    width: 80%; }
 
 
+}
 /* tablet */
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
