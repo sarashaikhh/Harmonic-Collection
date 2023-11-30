@@ -1,35 +1,30 @@
 .box {
   position: relative;
   padding-left: 5%;
-  margin-bottom: 35px; /* Adjusted margin to add space below the box */
-  float: left;
-
+  margin-top: 10px;
+  margin-bottom: 20px; /* Adjusted margin to add space below the box */
 }
 
 .draw {
+  float: left;
   position: relative;
   width: 40%;
   height: 40%;
   border: 2px solid #fff;
   overflow: hidden;
-  float: left;
-
+  margin-bottom: 35px; /* Adjusted margin to add space below the box */
 }
 
-.title{
+.title {
+  float: left;
   position: relative;
   width: 50%;
   overflow: hidden;
-  float: left;
-
-  
 }
 
 .draw img {
   width: 40px;
   position: absolute;
-  float: left;
-
 }
 
 .box h3 {
@@ -214,7 +209,6 @@ p1{
   width: 40%;
   float: left;
   padding-left: 5%;
-
 }
 
 .art {
@@ -225,29 +219,59 @@ p1{
 }
 
 
+
+
+
 .slider {
+  position: relative;
   display: flex;
   aspect-ratio: 1 / 1;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  overflow: hidden;
 }
 
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
 
+.slider img {
+  width: 100%;
+}
 
+.slider-nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%; /* Ensure the navigation spans the whole width */
+  padding: 0 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the total width */
+  transform: translateY(-50%);
+}
 
-.slider-nav a {
+.slider-nav a,
+.slider-nav div {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #ffffff00;
+  background-color: #ffffff;
   opacity: 0.75;
   transition: opacity ease 250ms;
+  cursor: pointer;
 }
+
+.slider-nav div {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+
+.slider-nav a:hover,
+.slider-nav div:hover {
+  opacity: 1;
+}
+
+
 
 
 

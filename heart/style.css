@@ -7,7 +7,7 @@
 .draw {
   position: relative;
   width: 40%;
-  height: 40%;
+  height: 45%;
   border: 2px solid #fff;
   overflow: hidden;
 }
@@ -243,17 +243,6 @@ p1{
 
 
 
-/*help w chatgtp*/
-
-
-
-
-
-
-
-
-
-
 
 .menu-container {
   display: grid;
@@ -265,14 +254,14 @@ p1{
 
 .menu-item {
   display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .menu-item img {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease; /* Add a separate transition for the image */
+  transition: transform 0.3s ease; 
 }
 
 
