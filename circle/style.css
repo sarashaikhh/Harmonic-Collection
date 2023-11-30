@@ -1,7 +1,6 @@
 .box {
   position: relative;
   padding-left: 5%;
-  margin-bottom: 35px; /* Adjusted margin to add space below the box */
 }
 
 .draw {
@@ -10,6 +9,8 @@
   height: 40%;
   border: 2px solid #fff;
   overflow: hidden;
+  margin-bottom: 35px; /* Adjusted margin to add space below the box */
+
 }
 
 .title{
