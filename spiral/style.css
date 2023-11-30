@@ -205,7 +205,6 @@ p1{
 
 .history {
   margin-top: 40%;
-  margin-bottom: 10%;
   width: 40%;
   float: left;
   padding-left: 5%;
@@ -220,58 +219,49 @@ p1{
 
 
 
-
-
-.slider {
+#slider-container {
   position: relative;
-  display: flex;
-  aspect-ratio: 1 / 1;
+  width: 80%;
+  margin: auto;
   overflow: hidden;
 }
 
-.slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-}
-
-.slider img {
-  width: 100%;
-}
-
-.slider-nav {
+#image-slider {
   display: flex;
-  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+#prev,
+#next {
   position: absolute;
-  justify-content: space-between;
-  width: 100%; /* Ensure the navigation spans the whole width */
-  padding: 0 20px; /* Adjust padding as needed */
-  box-sizing: border-box; /* Include padding in the total width */
+  top: 50%;
   transform: translateY(-50%);
-}
-
-.slider-nav a,
-.slider-nav div {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #ffffff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
+  font-size: 24px;
   cursor: pointer;
-}
-
-.slider-nav div {
-  font-size: 1.5rem;
   color: white;
-  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
 }
 
-.slider-nav a:hover,
-.slider-nav div:hover {
-  opacity: 1;
+#prev {
+  left: 30px;
 }
 
-
+#next {
+  right: 30px;
+}
 
 
 

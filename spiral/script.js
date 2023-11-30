@@ -28,21 +28,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-let slideIndex = 1;
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
 
-function showSlides(n) {
-  let slides = document.getElementsByClassName('slider');
-  if (n > slides.length) {
-    slideIndex = 1;
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const slider = document.getElementById('image-slider');
+
+  let currentIndex = 0;
+
+  prevBtn.addEventListener('click', function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = slider.children.length - 1;
+    }
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', function () {
+    if (currentIndex < slider.children.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+
+  function updateSlider() {
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
   }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
-  }
-}
+});
