@@ -2,6 +2,8 @@
   position: relative;
   padding-left: 5%;
   margin-bottom: 35px; /* Adjusted margin to add space below the box */
+  float: left;
+
 }
 
 .draw {
@@ -10,18 +12,24 @@
   height: 40%;
   border: 2px solid #fff;
   overflow: hidden;
+  float: left;
+
 }
 
 .title{
   position: relative;
   width: 50%;
   overflow: hidden;
+  float: left;
+
   
 }
 
 .draw img {
   width: 40px;
   position: absolute;
+  float: left;
+
 }
 
 .box h3 {
