@@ -1,3 +1,41 @@
+.def {
+  background-color: black;
+  padding: 10px; 
+  border: 10px solid white; 
+  transition: background-color 0.3s, color 0.3s;
+  width: 500px; 
+  height: 350px;
+  margin-left: 38%; 
+  position: absolute;
+  color: white; 
+}
+
+.def:hover {
+  background-color: white;
+  color: black; 
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+.def h1,
+.def h3,
+.def p {
+  color: inherit; 
+  
+}
+
+.def textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit; 
+}
+
+
+
 body{
   background-color: black;
 
@@ -36,7 +74,14 @@ h2{
   font-size: 25px;
   color:#FFFFFF
 }
-
+h3{
+  font-family: "evolver-variable", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+  color:#FFFFFF;
+  padding-top: -30px;
+}
 
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
@@ -56,6 +101,7 @@ p1{
   line-height: 30px;
   color:#FFFFFF
 }
+
 
 
 .nav{
@@ -95,54 +141,25 @@ p1{
 
 
 
-.def{
-  position: absolute;
-  margin-left: 38%;  
-  width: 35%;
-}
-
-.def img{
-  position: absolute;
-  width: 100%;
-}
-
-.hover-def {
-  transition: transform 0.3s;
-}
-
-.hover-def:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('def2.png');
-
-}
-
-
 
 
 
 .formula{
-  width: 40%;
-  position: absolute;
+  margin-top: 5%;
   margin-left: 50%;
-  margin-top: 40%;
-
 
 }
 
-.formula img{
-  width: 40%;
-  position: absolute;
-}
 
-.hover-formula {
+.formula h1::before {
+  content: "Formula"; /* Set initial content */
+ }
+
+.formula:hover h1::before {
+  content: "Formula = r=kθ"; /* Set content on hover */
+  font-style: italic; /* Set to italic on hover */
   transition: transform 0.3s;
-}
-
-.hover-formula:hover {
   transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('formula2.png');
 
 }
 
@@ -150,7 +167,7 @@ p1{
 
 
 .history {
-  margin-top: 50%;
+  margin-top: 40%;
   width: 40%;
   float: left;
   padding-left: 5%;
@@ -158,7 +175,7 @@ p1{
 }
 
 .art {
-  margin-top: 50%;
+  margin-top: 40%;
   width: 40%;
   float: right;
   padding-right: 5%;
