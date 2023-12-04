@@ -237,7 +237,7 @@ p1{
 }
 
 .slide img {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1/1;
   width: 100%;
   height: auto;
 }
@@ -260,25 +260,6 @@ p1{
 
 #next {
   right: 30px;
-}
-
-
-
-
-
-
-
-/*help w chatgtp*/
-
-
-.gif-container {
-  width: 40%; 
-  margin-bottom: 10%;  
-
-}
-
-.gif-container img {
-  width: 100%;
 }
 
 
