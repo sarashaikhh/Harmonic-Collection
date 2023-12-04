@@ -325,6 +325,9 @@ margin-top: 15px;}
 @media screen and (min-width: 1000px) and (max-width: 1200px){
   .history {margin-top: 50%;}
   .art {margin-top: 50%;}
+  .box {
+    margin-top: 10%;
+  float: left;}
 }
 @media screen and (min-width: 850px) and (max-width: 1000px) {
 
