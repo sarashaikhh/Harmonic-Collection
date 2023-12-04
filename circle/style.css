@@ -1,4 +1,5 @@
 .box {
+  float: left;
   position: relative;
   padding-left: 5%;
   margin-top: 10px;
@@ -7,7 +8,6 @@
 
 .draw {
   position: relative;
-  width: 40%;
   height: 40%;
   border: 2px solid #fff;
   overflow: hidden;
@@ -16,7 +16,6 @@
 
 .title {
   position: relative;
-  width: 50%;
   overflow: hidden;
 }
 
@@ -29,6 +28,10 @@
   margin: 0;
   margin-bottom: 10px; /* Added margin to move the heading 10px above the white box */
 }
+
+
+
+
 
 .def {
   background-color: black;

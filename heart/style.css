@@ -1,22 +1,22 @@
 .box {
+  float: left;
   position: relative;
   padding-left: 5%;
-  margin-bottom: 35px; /* Adjusted margin to add space below the box */
+  margin-top: 10px;
+  margin-bottom: 20px; /* Adjusted margin to add space below the box */
 }
 
 .draw {
   position: relative;
-  width: 40%;
-  height: 45%;
+  height: 40%;
   border: 2px solid #fff;
   overflow: hidden;
+  margin-bottom: 35px; /* Adjusted margin to add space below the box */
 }
 
-.title{
+.title {
   position: relative;
-  width: 50%;
   overflow: hidden;
-  
 }
 
 .draw img {
@@ -201,6 +201,7 @@ p1{
 
 .history {
   margin-top: 40%;
+  margin-bottom: 10%;
   width: 40%;
   float: left;
   padding-left: 5%;
