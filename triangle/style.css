@@ -314,3 +314,66 @@ margin-top: 30px;}
 .menu-item:hover img {
   transform: scale(1.05);
 }
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  .history {margin-top: 50%;}
+  .art {margin-top: 50%;}
+}
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+
+  .history {margin-top: 60%;}
+  .art {margin-top: 60%;}
+  .circle{width: 50%}
+
+}
+
+@media screen and (max-width: 850px) and (min-width: 768px) {
+
+  .history {margin-top: 70%;}
+  .art {margin-top: 70%;}
+  .circle{width: 60%}
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .art {
+    margin-left: -10%; /* Adjust the value as needed */
+    margin-top: 5%;
+    width: 80%;
+
+  }
+  .history {
+    margin-right: 5%; /* Adjust the value as needed */
+    margin-top: 95%;
+    width: 80%;
+
+  }
+  .def {
+    margin-left: 10%; /* Adjust the value as needed */
+    margin-top: 95%;
+    width: 80%;
+
+  }
+
+  .circle {
+    width: 60%;
+  }
+
+  .def {
+    margin-top: 10%;
+    margin-left: 0; /* Adjust the value as needed */
+  }
+  .formula{
+    margin-left: 10%; /* Adjust the value as needed */
+    margin-top: 70%;
+
+  }
+  .box {
+    margin-top: 10%;
+    margin-right: 2%; /* Adjust the value as needed */
+
+  }
+}
+
