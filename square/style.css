@@ -329,7 +329,7 @@ margin-top: 30px;}
 
   .history {margin-top: 60%;}
   .art {margin-top: 60%;}
-  .circle{width: 50%}
+  .square{width: 50%}
 
 }
 
@@ -337,7 +337,7 @@ margin-top: 30px;}
 
   .history {margin-top: 70%;}
   .art {margin-top: 70%;}
-  .circle{width: 60%}
+  .square{width: 60%}
 
   
 }
@@ -362,7 +362,7 @@ margin-top: 30px;}
 
   }
 
-  .circle {
+  .square {
     width: 60%;
   }
 
