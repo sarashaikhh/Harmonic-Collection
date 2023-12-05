@@ -111,7 +111,6 @@ h2{
 }
 h3{
   font-family: "evolver-variable", sans-serif;
-  font-style: italic;
   font-weight: 400;
   font-size: 25px;
   color:#FFFFFF;
@@ -329,7 +328,6 @@ margin-top: 15px;}
 }
 
 
-
 @media screen and (min-width: 1000px) and (max-width: 1200px){
   .history {margin-top: 50%;}
   .art {margin-top: 50%;}
@@ -381,7 +379,7 @@ margin-top: 15px;}
   }
   .formula{
     margin-left: 10%; /* Adjust the value as needed */
-    margin-top: 70%;
+    margin-top: 100%;
 
   }
   .box {
