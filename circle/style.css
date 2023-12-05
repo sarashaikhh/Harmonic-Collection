@@ -381,3 +381,45 @@ p1{
   }
 }
 
+
+
+@media screen and (max-device-width: 768px) {
+  .art {
+    margin-left: -10%; /* Adjust the value as needed */
+    margin-top: 5%;
+    width: 80%;
+
+  }
+  .history {
+    margin-right: 5%; /* Adjust the value as needed */
+    margin-top: 95%;
+    width: 80%;
+
+  }
+  .def {
+    margin-left: 10%; /* Adjust the value as needed */
+    margin-top: 95%;
+    width: 80%;
+
+  }
+
+  .circle {
+    width: 60%;
+  }
+
+  .def {
+    margin-top: 10%;
+    margin-left: 0; /* Adjust the value as needed */
+  }
+  .formula{
+    margin-left: 10%; /* Adjust the value as needed */
+    margin-top: 70%;
+
+  }
+  .box {
+    margin-top: 10%;
+    margin-right: 2%; /* Adjust the value as needed */
+
+  }
+}
+
