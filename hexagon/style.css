@@ -50,7 +50,7 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 450px;
+  height: 250px;
   margin-left: 38%; 
   margin-top: -40px;
   position: absolute;
@@ -89,7 +89,8 @@
 
 
 .formula{
-  margin-top: 500px;
+  margin-top: 280px;
+  margin-bottom: 280px;
   margin-left: 70%;
 
 }
@@ -398,12 +399,13 @@ margin-top: 15px;}
 @media screen and (max-width: 768px) {
   .hex {
     width: 80%;
+    margin-left: 5%; 
   }
   .def {
   margin-left: 5%; 
   width: 100px; 
-  height: 250px;
-  margin-top: 500px;
+  height: 150px;
+  margin-top: 450px;
   width: 80%;
 
   }
@@ -422,7 +424,10 @@ margin-top: 15px;}
 
   .formula{
     margin-left: 50%; 
-    margin-top: 820px;
+    margin-top: 680px;
+    margin-bottom: 10px;
+
+
   }
   .formula h1{
     font-size: 25px;
