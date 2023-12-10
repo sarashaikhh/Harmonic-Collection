@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create an image element
     const image = document.createElement('img');
-    image.src = 'rhombus.png'; // 
+    image.src = 'rhombus.png'; // Replace 'star.png' with the actual image URL
 
     // Generate random width and height for the image (you can adjust the range as needed)
     const randomWidth = Math.floor(Math.random() * 100) + 20; // Random width between 20 and 120 pixels
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const message = document.querySelector('.message');
   const gridContainer = document.querySelector('.grid-container');
 
-  const welcomeTextContent = "Thank you, viewer, for embarking on this journey into the world of shapes. I hope you enjoyed learning about the “rhombus” shape and take away lessons for the future. Let your curiosity be your guide as you navigate through the next shape on our interactive menu below - your presence adds to the dimension our exploration.  Let the adventure unfold, and may each shape unveil a new chapter in the story of visual delight. Your quest for artistic discovery begins now!";
+  const welcomeTextContent = "Thank you, viewer, for embarking on this journey into the world of shapes. I hope you enjoyed learning about the “star” shape and take away lessons for the future. Let your curiosity be your guide as you navigate through the next shape on our interactive menu below - your presence adds to the dimension our exploration.  Let the adventure unfold, and may each shape unveil a new chapter in the story of visual delight. Your quest for artistic discovery begins now!";
   let index = 0;
 
   function typeWelcomeText() {
