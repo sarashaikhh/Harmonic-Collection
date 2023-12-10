@@ -240,6 +240,19 @@
 }
 
 
+/* end message */
+
+.message {
+  margin: 10%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 80%;
+  text-align: center;
+  overflow: hidden; 
+  opacity: 1; 
+}
+
+
 
 
 
@@ -376,15 +389,7 @@ margin-top: 15px;}
 
 
 
-.message {
-  margin: 10%;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  width: 80%;
-  text-align: center;
-  overflow: hidden; 
-  opacity: 1; 
-}
+
 
 
 /* media queries! */
@@ -393,6 +398,7 @@ margin-top: 15px;}
 @media screen and (max-width: 768px) {
   .star {
     width: 80%;
+    padding-left: 5%; 
   }
   .def {
   margin-left: 5%; 
@@ -439,7 +445,7 @@ margin-top: 15px;}
   }
 
   .message {
-    margin-top: -700px;
+    margin-top: -1000px;
 
   }
 
