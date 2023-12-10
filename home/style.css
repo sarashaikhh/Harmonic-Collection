@@ -10,13 +10,24 @@ ul{
   font-size: 40px;
   line-height: 77px;
   color:#FFFFFF
+
 }
 
 
-.nav{
+.nav {
   justify-content: space-between;
   display: flex;
-  padding: 20px
+  padding: 20px;
+}
+
+.nav a {
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF; /* Set text color to white */
+  transition: italic 0.3s ease; /* Adding transition effect for italicization */
+}
+
+.nav a:hover {
+  font-style: italic; /* Italicize on hover */
 }
 
 

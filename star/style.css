@@ -2,7 +2,7 @@
   float: left;
   position: relative;
   padding-left: 5%;
-  margin-top: 10px;
+  margin-top: 15%;
   margin-bottom: 20px; /* Adjusted margin to add space below the box */
 }
 
@@ -39,7 +39,7 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 350px;
+  height: 450px;
   margin-left: 38%; 
   position: absolute;
   color: white; 
@@ -87,19 +87,30 @@ ul{
 }
 
 
-.nav{
+.nav {
   justify-content: space-between;
   display: flex;
-  padding: 20px
+  padding: 20px;
 }
+
+.nav a {
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF; /* Set text color to white */
+  transition: italic 0.3s ease; /* Adding transition effect for italicization */
+}
+
+.nav a:hover {
+  font-style: italic; /* Italicize on hover */
+}
+
 
 
 h1{
   font-family: "evolver-variable", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  color:#FFFFFF
+  color:#FFFFFF;
+  padding-top: -30px;
 }
 h2{
   font-family: "evolver-variable", sans-serif;
@@ -110,17 +121,18 @@ h2{
   color:#FFFFFF
 }
 h3{
+
   font-family: "evolver-variable", sans-serif;
+  font-style: italic;
   font-weight: 400;
-  font-size: 25px;
-  color:#FFFFFF;
-  padding-top: -30px;
+  font-size: 30px;
+  color:#FFFFFF
 }
 
 p{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
   color:#FFFFFF
 }
@@ -148,7 +160,7 @@ p1{
 
 
 .star{
-  width: 40%;
+  width: 500px;
   position: absolute;
   margin-left: 5%;
   margin-top: 3%;
@@ -179,7 +191,7 @@ p1{
 
 
 .formula{
-  margin-top: 5%;
+  margin-bottom: 1%;
   margin-left: 50%;
 
 }
@@ -220,7 +232,6 @@ p1{
 
 #slider-container {
   position: relative;
-  width: 80%;
   margin: auto;
   overflow: hidden;
 }
@@ -324,7 +335,6 @@ margin-top: 15px;}
 
   .history {margin-top: 60%;}
   .art {margin-top: 60%;}
-  .star{width: 50%}
 
 }
 
@@ -332,7 +342,6 @@ margin-top: 15px;}
 
   .history {margin-top: 70%;}
   .art {margin-top: 70%;}
-  .star{width: 60%}
 
   
 }
