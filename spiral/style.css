@@ -1,36 +1,48 @@
-.box {
-  float: left;
-  position: relative;
-  padding-left: 5%;
-  margin-top: 10px;
-  margin-bottom: 20px; /* Adjusted margin to add space below the box */
+/* home & about */
+
+.nav {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
 }
 
-.draw {
-  position: relative;
-  height: 40%;
-  border: 2px solid #fff;
-  overflow: hidden;
-  margin-bottom: 35px; /* Adjusted margin to add space below the box */
+.nav a {
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF; /* Set text color to white */
+  transition: italic 0.3s ease; /* Adding transition effect for italicization */
 }
 
-.title {
-  position: relative;
-  overflow: hidden;
+.nav a:hover {
+  font-style: italic; /* Italicize on hover */
 }
 
-.draw img {
-  width: 40px;
+
+
+/* shape */
+
+
+.spiral{
+  width: 600px;
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.spiral img{
+  width: 100%;
   position: absolute;
 }
 
-.box h3 {
-  margin: 0;
-  margin-bottom: 10px; /* Added margin to move the heading 10px above the white box */
+.hover-spiral {
+  transition: transform 0.3s;
 }
 
+.hover-spiral:hover {
+  transform: scale(1.1);
+  content: url('spiral2.png');
+}
 
-
+ /* definition box */
 
 .def {
   background-color: black;
@@ -38,8 +50,9 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 350px;
+  height: 450px;
   margin-left: 38%; 
+  margin-top: -40px;
   position: absolute;
   color: white; 
 }
@@ -55,7 +68,6 @@
 .def h3,
 .def p {
   color: inherit; 
-  
 }
 
 .def textarea {
@@ -70,116 +82,15 @@
 
 
 
-body{
-  background-color: black;
-
-}
-
-
-ul{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 77px;
-  color:#FFFFFF
-}
-
-
-.nav{
-  justify-content: space-between;
-  display: flex;
-  padding: 20px
-}
-
-
-h1{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  color:#FFFFFF
-}
-h2{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 400;
-  font-size: 25px;
-  color:#FFFFFF
-}
-h3{
-  font-family: "evolver-variable", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  color:#FFFFFF;
-  padding-top: -30px;
-}
-
-p{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color:#FFFFFF
-}
-
-p1{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
-  font-style: normal;
-  text-align: center;
-  padding-top: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color:#FFFFFF
-}
 
 
 
-.nav{
-  justify-content: space-between;
-  display: flex;
-  padding: 20px
-
-}
-
-
-
-.spiral{
-  width: 40%;
-  position: absolute;
-  margin-left: 5%;
-  margin-top: 3%;
-
-}
-
-
-.spiral img{
-  width: 100%;
-  position: absolute;
-}
-
-.hover-spiral {
-  transition: transform 0.3s;
-}
-
-.hover-spiral:hover {
-  transform: scale(1.1);
-  /* Change the image on hover */
-  content: url('spiral.png');
-
-}
-
-
-
-
-
+/* formula */
 
 
 .formula{
-  margin-top: 5%;
-  margin-left: 50%;
+  margin-top: 500px;
+  margin-left: 70%;
 
 }
 
@@ -189,7 +100,7 @@ p1{
  }
 
 .formula:hover h1::before {
-  content: "Formula = r=kθ"; /* Set content on hover */
+  content: "Formula = A= (1/4)√(5(5+2√5)s^2"; /* Set content on hover */
   font-style: italic; /* Set to italic on hover */
   transition: transform 0.3s;
   transform: scale(1.1);
@@ -198,18 +109,21 @@ p1{
 
 
 
+/* history */
 
 .history {
-  margin-top: 40%;
+  margin-top: 10%;
   margin-bottom: 10%;
   width: 40%;
   float: left;
   padding-left: 5%;
-
 }
 
+/* history */
+
+
 .art {
-  margin-top: 40%;
+  margin-top: 10%;
   width: 40%;
   float: right;
   padding-right: 5%;
@@ -217,9 +131,11 @@ p1{
 
 
 
+
+/* artist slideshow */
+
 #slider-container {
   position: relative;
-  width: 80%;
   margin: auto;
   overflow: hidden;
 }
@@ -236,21 +152,21 @@ p1{
 }
 
 .slide img {
+  aspect-ratio: 1/1;
   width: 100%;
   height: auto;
-  aspect-ratio: 1/1;
 }
 
 #prev,
 #next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   font-size: 24px;
   cursor: pointer;
   color: white;
   padding: 10px;
   border: none;
+  z-index: 1; 
 }
 
 #prev {
@@ -263,11 +179,164 @@ p1{
 
 
 
+/* drawing box */
+
+.box {
+  float: left;
+  position: relative;
+  padding-left: 5%;
+  margin-top: 15%;
+  margin-bottom: -50%;
+  width: 90%;
+  height: 150%;
+  
+
+}
+
+.draw {
+  position: relative;
+  height: 40%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin-bottom: 35px; 
+}
+
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.hint {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+
+.draw img {
+  width: 40px;
+  position: absolute;
+}
+
+.box h3 {
+  margin: 0;
+  margin-bottom: 10px; 
+}
+
+
+
+#refreshButton {
+  padding: 10px 20px;
+  width: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 90%;
+  margin-top: -40px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#refreshButton:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+}
+
+
+/* end message */
+
+.message {
+  margin: 10%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 80%;
+  text-align: center;
+  overflow: hidden; 
+  opacity: 1; 
+}
 
 
 
 
 
+
+
+
+/* type/other */
+
+
+body{
+  background-color: black;
+}
+
+
+ul{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 77px;
+  color:#FFFFFF
+}
+
+
+
+
+
+h1{
+  font-family: "evolver-variable", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color:#FFFFFF;
+  padding-top: -30px;
+}
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  color:#FFFFFF
+}
+h3{
+
+  font-family: "evolver-variable", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  color:#FFFFFF
+}
+
+p{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color:#FFFFFF
+}
+
+p1{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color:#FFFFFF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shape menu at bottom */
 
 .menu-container {
   display: grid;
@@ -279,18 +348,18 @@ p1{
 
 .menu-item {
   display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Add a smooth transition effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .menu-item img {
   width: 100%;
+  margin-bottom: 50%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease; /* Add a separate transition for the image */
+  transition: transform 0.3s ease; 
 }
 
 
-/* Different styles for each link */
 .menu-item:nth-child(1) 
 { width: 80%; 
 }
@@ -321,67 +390,115 @@ margin-top: 15px;}
 
 
 
-@media screen and (min-width: 1000px) and (max-width: 1200px){
-  .history {margin-top: 50%;}
-  .art {margin-top: 50%;}
-  .box {
-    margin-top: 10%;
-  float: left;}
-}
-@media screen and (min-width: 850px) and (max-width: 1000px) {
 
-  .history {margin-top: 60%;}
-  .art {margin-top: 60%;}
-  .spiral{width: 50%}
 
-}
+/* media queries! */
 
-@media screen and (max-width: 850px) and (min-width: 768px) {
-
-  .history {margin-top: 70%;}
-  .art {margin-top: 70%;}
-  .spiral{width: 60%}
-
-  
-}
 
 @media screen and (max-width: 768px) {
-  .art {
-    margin-left: -10%; /* Adjust the value as needed */
-    margin-top: 5%;
+  .spiral {
     width: 80%;
+    padding-left: 5%; 
+  }
+  .def {
+  margin-left: 5%; 
+  width: 100px; 
+  height: 250px;
+  margin-top: 500px;
+  width: 80%;
 
+  }
+
+  .def h1{    
+  font-size: 30px;
+  }
+  .def h3{    
+  font-size: 20px;
+  }
+  .def p {
+    font-size: 10px;
+    color: inherit; 
+  }
+
+
+  .formula{
+    margin-left: 50%; 
+    margin-top: 820px;
+  }
+  .formula h1{
+    font-size: 25px;
   }
   .history {
-    margin-right: 5%; /* Adjust the value as needed */
-    margin-top: 95%;
+    margin-top: 15%;
     width: 80%;
-
-  }
-  .def {
-    margin-left: 10%; /* Adjust the value as needed */
-    margin-top: 95%;
+  }  
+  .art {
+    margin-top: 5%;
     width: 80%;
-
-  }
-
-  .spiral {
-    width: 60%;
-  }
-
-  .def {
-    margin-top: 10%;
-    margin-left: 0; /* Adjust the value as needed */
-  }
-  .formula{
-    margin-left: 10%; /* Adjust the value as needed */
-    margin-top: 70%;
-
-  }
+    padding-left: 5%;
+    float: left; 
+    }
   .box {
+    height: 150%;
     margin-top: 10%;
-    margin-right: 2%; /* Adjust the value as needed */
+    margin-right: 2%; 
+  }
 
+  .message {
+    margin-top: -1000px;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+/* ANIMATION FOR ALL THE DIVS */
+
+/* first 3 animation */
+
+.spiral, .def, .formula {
+  opacity: 0;
+}
+
+.spiral {
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+.def {
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
+
+.formula {
+  animation: fadeIn 1s ease-in-out 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
   }
 }
+
+/* history & art animation */
+
+
+[data-scroll-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-scroll-reveal].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
 
