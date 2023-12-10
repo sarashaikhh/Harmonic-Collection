@@ -44,6 +44,14 @@ h1{
 }
 
 
+h2{
+  font-family: "evolver-variable", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  color:#FFFFFF
+
+}
 
 marquee{
   font-family: "evolver-variable", sans-serif;
