@@ -26,7 +26,7 @@
 .heart{
   width: 550px;
   position: absolute;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 3%;
 }
 
@@ -180,7 +180,6 @@
 }
 
 
-
 /* drawing box */
 
 .box {
@@ -188,12 +187,11 @@
   position: relative;
   padding-left: 5%;
   margin-top: 15%;
-  margin-bottom: -50%;
+  margin-bottom: -35%;
   width: 90%;
   height: 150%;
-  
-
 }
+
 
 .draw {
   position: relative;
@@ -233,7 +231,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-left: 90%;
-  margin-top: -40px;
+  margin-top: -50px;
   transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
@@ -246,16 +244,13 @@
 
 .message {
   margin: 10%;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 300px;
+  margin-bottom: 400px;
   width: 80%;
   text-align: center;
   overflow: hidden; 
   opacity: 1; 
 }
-
-
-
 
 
 
@@ -442,12 +437,12 @@ margin-top: 15px;}
     }
   .box {
     height: 150%;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-right: 2%; 
   }
 
   .message {
-    margin-top: -1000px;
+    margin-top: -200px;
   }
 
 
