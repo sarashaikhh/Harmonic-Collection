@@ -185,8 +185,8 @@
   float: left;
   position: relative;
   padding-left: 5%;
-  margin-top: 15%;
-  margin-bottom: -35%;
+  margin-top: 2%; /* Adjust the margin-top value */
+  margin-bottom: 35%;
   width: 90%;
   height: 150%;
 }
@@ -238,18 +238,6 @@
   transform: scale(1.2); /* Increase the size on hover */
 }
 
-
-/* end message */
-
-.message {
-  margin: 10%;
-  margin-top: 300px;
-  margin-bottom: 400px;
-  width: 80%;
-  text-align: center;
-  overflow: hidden; 
-  opacity: 1; 
-}
 
 
 
@@ -328,15 +316,9 @@ p1{
 
 
 
-
-
-
-
-
-
-
-
 /* shape menu at bottom */
+
+
 
 .menu-container {
   display: grid;
@@ -347,13 +329,11 @@ p1{
 
 
 .menu-item {
-  display: block;
   transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .menu-item img {
   width: 100%;
-  margin-bottom: 50%;
   height: auto;
   display: block;
   transition: transform 0.3s ease; 

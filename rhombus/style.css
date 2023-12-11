@@ -185,7 +185,6 @@
   position: relative;
   padding-left: 5%;
   margin-top: 15%;
-  margin-bottom: -50%;
   width: 90%;
   height: 150%;
   
@@ -239,18 +238,55 @@
 }
 
 
-/* end message */
-
-.message {
-  margin: 10%;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  width: 80%;
-  text-align: center;
-  overflow: hidden; 
-  opacity: 1; 
+/* drawing box */
+.box {
+  float: left;
+  position: relative;
+  padding-left: 5%;
+  margin-top: 15%;
+  margin-bottom: -15%; /* Adjusted margin-bottom */
+  width: 90%;
+  height: 150%;
 }
 
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  margin-top: 5%; /* Add margin from the top */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Take full width */
+  margin-bottom: 0; /* Set to 0 to remove space below the menu */
+}
+
+.menu-item {
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.menu-item:nth-child(1) { width: 80%; }
+.menu-item:nth-child(2) { width: 70%; }
+.menu-item:nth-child(3) { width: 80%; margin-top: 10px; }
+.menu-item:nth-child(4) { width: 80%; }
+.menu-item:nth-child(5) { width: 90%; margin-top: 15px; }
+.menu-item:nth-child(6) { width: 80%; }
+.menu-item:nth-child(7) { width: 80%; }
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
+}
 
 
 
@@ -335,56 +371,6 @@ p1{
 
 
 
-/* shape menu at bottom */
-
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  padding: 20px;
-  grid-gap: 10px;
-}
-
-
-.menu-item {
-  display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.menu-item img {
-  width: 100%;
-  margin-bottom: 50%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease; 
-}
-
-
-.menu-item:nth-child(1) 
-{ width: 80%; 
-}
-.menu-item:nth-child(2) 
-{ width: 70%; }
-.menu-item:nth-child(3) 
-{ width: 80%; 
-  margin-top: 10px;}
-.menu-item:nth-child(4) 
-{ width: 80%; }
-.menu-item:nth-child(5) 
-{ width: 90%; 
-margin-top: 15px;}
-.menu-item:nth-child(6) 
-{ width: 80%; }
-.menu-item:nth-child(7) 
-{ width: 80%; }
-
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-.menu-item:hover img {
-  transform: scale(1.05);
-}
 
 
 
@@ -397,59 +383,65 @@ margin-top: 15px;}
 @media screen and (max-width: 768px) {
   .rhombus {
     width: 60%;
-    padding-left: 10%; 
+    padding-left: 10%;
   }
+
   .def {
-  margin-left: 5%; 
-  width: 100px; 
-  height: 150px;
-  margin-top: 600px;
-  width: 80%;
-
+    margin-left: 5%;
+    width: 100px;
+    height: 150px;
+    margin-top: 600px;
+    width: 80%;
   }
 
-  .def h1{    
-  font-size: 30px;
+  .def h1 {
+    font-size: 30px;
   }
-  .def h3{    
-  font-size: 20px;
+
+  .def h3 {
+    font-size: 20px;
   }
+
   .def p {
     font-size: 10px;
-    color: inherit; 
+    color: inherit;
   }
 
-
-  .formula{
-    margin-left: 50%; 
+  .formula {
+    margin-left: 50%;
     margin-top: 820px;
   }
-  .formula h1{
+
+  .formula h1 {
     font-size: 25px;
   }
+
   .history {
     margin-top: 15%;
     width: 80%;
-  }  
+  }
+
   .art {
     margin-top: 5%;
     width: 80%;
     padding-left: 5%;
-    float: left; 
-    }
+    float: left;
+  }
+
   .box {
-    height: 150%;
-    margin-top: 10%;
-    margin-right: 2%; 
+    height: 500px; /* Adjusted fixed height */
+    margin-top: 15%;
+    margin-bottom: 0; /* Removed negative margin */
+    margin-right: 2%;
   }
 
-  .message {
-    margin-top: -1000px;
-
+  .menu-container {
+    bottom: 0;
+    margin-top: 0; /* Removed margin-top */
+    margin-bottom: 0; /* Removed margin-bottom */
   }
-
-
 }
+
 
 
 

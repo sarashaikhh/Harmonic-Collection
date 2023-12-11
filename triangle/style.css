@@ -177,22 +177,22 @@
   right: 30px;
 }
 
+.marquee{
+  margin-top: 2%;
 
-
-/* drawing box */
-
-.box {
-  float: left;
-  position: relative;
-  padding-left: 5%;
-  margin-top: 55%;
-  margin-bottom: -40%;
-  width: 90%;
-  height: 150%;
-  
 
 }
 
+/* drawing box */
+.box{
+float: left;
+position: relative;
+padding-left: 5%;
+margin-top: 2%;
+margin-bottom: -300px;
+width: 90%;
+height: 150%;
+}
 .draw {
   position: relative;
   height: 40%;
