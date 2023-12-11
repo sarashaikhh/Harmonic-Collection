@@ -1,32 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
   const imageContainer = document.getElementById('draw');
   const refreshButton = document.getElementById('refreshButton');
-  let previousColor = getRandomColor(); // Initialize with a random color
 
   refreshButton.addEventListener('click', function () {
-    // Instead of setting innerHTML to an empty string, you can use innerHTML directly
+    // Clear the drawing by removing all child elements
     imageContainer.innerHTML = '';
-    // Generate a new random color and update the previousColor variable
-    previousColor = getRandomColor();
   });
 
   imageContainer.addEventListener('click', function (event) {
     const offsetX = event.offsetX;
     const offsetY = event.offsetY;
 
-    // Use the previous color for the path
-    const currentColor = previousColor;
+    // Generate a random color for the rectangle
+    const randomColor = getRandomColor();
 
-    // Create an image element with inline SVG content using createElementNS
-    const image = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    image.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    image.setAttribute('viewBox', '0 0 233.76 119.07');
-
-    // Define the SVG content
+    // Create an image element with inline SVG content
+    const image = document.createElement('div');
     image.innerHTML = `
-      <?xml version="1.0" encoding="UTF-8"?>
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233.76 119.07">
-        <polygon class="cls-1" points="233.76 119.07 0 119.07 39.47 0 186.66 0 233.76 119.07"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233.76 119.07">
+        <polygon fill="${randomColor}" stroke-width="0px" points="233.76 119.07 0 119.07 39.47 0 186.66 0 233.76 119.07"/>
       </svg>
     `;
 
@@ -35,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const randomHeight = Math.floor(Math.random() * 100) + 20;
 
     // Set the width and height of the image
-    image.setAttribute('width', `${randomWidth}px`);
-    image.setAttribute('height', `${randomHeight}px`);
+    image.style.width = `${randomWidth}px`;
+    image.style.height = `${randomHeight}px`;
 
     // Position the image at the clicked coordinates
     image.style.position = 'absolute';

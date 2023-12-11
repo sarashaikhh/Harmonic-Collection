@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const refreshButton = document.getElementById('refreshButton');
 
   refreshButton.addEventListener('click', function () {
-    // Clear the drawing by setting innerHTML to an empty string
+    // Clear the drawing by removing all child elements
     imageContainer.innerHTML = '';
   });
 
@@ -17,17 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create an image element with inline SVG content
     const image = document.createElement('div');
     image.innerHTML = `
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.48 306.94">
-    <defs>
-      <style>
-        .cls-1 {
-          fill: #fff;
-          stroke-width: 0px;
-        }
-      </style>
-    </defs>
-    <polygon class="cls-1" points="210.6 101.24 321.48 118.7 240.18 196.09 257.83 306.94 159.11 253.53 59.14 304.57 79.44 194.17 0 114.87 111.26 100.06 162.13 0 210.6 101.24"/>
-  </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.48 306.94">
+        <polygon fill="${randomColor}" points="210.6 101.24 321.48 118.7 240.18 196.09 257.83 306.94 159.11 253.53 59.14 304.57 79.44 194.17 0 114.87 111.26 100.06 162.13 0 210.6 101.24"/>
+      </svg>
     `;
 
     // Generate random width and height for the image
@@ -57,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return color;
   }
 });
+
+
 
 
 
