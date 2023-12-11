@@ -50,7 +50,7 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 450px;
+  height: 350px;
   margin-left: 38%; 
   margin-top: -40px;
   position: absolute;
@@ -89,7 +89,7 @@
 
 
 .formula{
-  margin-top: 500px;
+  margin-top: 400px;
   margin-left: 70%;
 
 }
@@ -186,7 +186,7 @@
   position: relative;
   padding-left: 5%;
   margin-top: 15%;
-  margin-bottom: -50%;
+  margin-bottom: -40%;
   width: 90%;
   height: 150%;
   
@@ -245,7 +245,7 @@
 .message {
   margin: 10%;
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
   width: 80%;
   text-align: center;
   overflow: hidden; 
@@ -398,7 +398,7 @@ margin-top: 15px;}
 @media screen and (max-width: 768px) {
   .square {
     width: 80%;
-    padding-left: 5%; 
+    padding-right: -5%; 
   }
   .def {
   margin-left: 5%; 
@@ -440,12 +440,12 @@ margin-top: 15px;}
     }
   .box {
     height: 150%;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-right: 2%; 
   }
 
   .message {
-    margin-top: -1000px;
+    margin-top: -200px;
 
   }
 

@@ -1,5 +1,3 @@
-// code for drawing
-
 document.addEventListener('DOMContentLoaded', function () {
   const imageContainer = document.getElementById('draw');
   const refreshButton = document.getElementById('refreshButton');
@@ -15,13 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const offsetX = event.offsetX;
     const offsetY = event.offsetY;
 
-    // Create an image element
-    const image = document.createElement('img');
-    image.src = 'circle.png'; // 
+    // Generate a random color for the circle
+    const randomColor = getRandomColor();
 
-    // Generate random width and height for the image (you can adjust the range as needed)
-    const randomWidth = Math.floor(Math.random() * 100) + 20; // Random width between 20 and 120 pixels
-    const randomHeight = Math.floor(Math.random() * 100) + 20; // Random height between 20 and 120 pixels
+    // Create an image element with inline SVG content
+    const image = document.createElement('div');
+    image.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+        <circle cx="144" cy="144" r="144" fill="${randomColor}" stroke-width="0"/>
+      </svg>
+    `;
+
+    // Generate random width and height for the image
+    const randomWidth = Math.floor(Math.random() * 100) + 20;
+    const randomHeight = Math.floor(Math.random() * 100) + 20;
 
     // Set the width and height of the image
     image.style.width = `${randomWidth}px`;
@@ -35,7 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Append the image to the container
     imageContainer.appendChild(image);
   });
+
+  // Function to generate a random color
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 });
+
 
 
 // code for slideshow

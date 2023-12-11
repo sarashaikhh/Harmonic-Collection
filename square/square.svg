@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 504">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233.76 233.76">
   <defs>
     <style>
       .cls-1 {
@@ -8,5 +8,5 @@
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="180" cy="236.28" r="144"/>
+  <rect class="cls-1" width="233.76" height="233.76"/>
 </svg>
