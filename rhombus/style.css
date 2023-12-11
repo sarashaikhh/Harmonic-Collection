@@ -178,17 +178,16 @@
 
 
 
-/* drawing box */
 
+/* drawing box */
 .box {
   float: left;
   position: relative;
   padding-left: 5%;
   margin-top: 15%;
+  margin-bottom: -5%; /* Adjusted margin-bottom */
   width: 90%;
   height: 150%;
-  
-
 }
 
 .draw {
