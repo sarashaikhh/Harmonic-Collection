@@ -178,7 +178,6 @@
 }
 
 
-
 /* drawing box */
 
 .box {
@@ -186,11 +185,11 @@
   position: relative;
   padding-left: 5%;
   margin-top: 15%;
-  margin-bottom: -35%;
   width: 90%;
   height: 150%;
-}
+  
 
+}
 
 .draw {
   position: relative;
@@ -230,7 +229,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-left: 90%;
-  margin-top: -50px;
+  margin-top: -40px;
   transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
@@ -239,16 +238,54 @@
 }
 
 
-/* end message */
+/* drawing box */
+.box {
+  float: left;
+  position: relative;
+  padding-left: 5%;
+  margin-top: 15%;
+  margin-bottom: -15%; /* Adjusted margin-bottom */
+  width: 90%;
+  height: 150%;
+}
 
-.message {
-  margin: 10%;
-  margin-top: 300px;
-  margin-bottom: 400px;
-  width: 80%;
-  text-align: center;
-  overflow: hidden; 
-  opacity: 1; 
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  margin-top: 5%; /* Add margin from the top */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Take full width */
+  margin-bottom: 0; /* Set to 0 to remove space below the menu */
+}
+
+.menu-item {
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.menu-item:nth-child(1) { width: 80%; }
+.menu-item:nth-child(2) { width: 70%; }
+.menu-item:nth-child(3) { width: 80%; margin-top: 10px; }
+.menu-item:nth-child(4) { width: 80%; }
+.menu-item:nth-child(5) { width: 90%; margin-top: 15px; }
+.menu-item:nth-child(6) { width: 80%; }
+.menu-item:nth-child(7) { width: 80%; }
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
 }
 
 
@@ -334,61 +371,6 @@ p1{
 
 
 
-/* shape menu at bottom */
-
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  padding: 20px;
-  grid-gap: 10px;
-}
-
-
-.menu-item {
-  display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.menu-item img {
-  width: 100%;
-  margin-bottom: 50%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease; 
-}
-
-
-.menu-item:nth-child(1) 
-{ width: 80%; 
-}
-.menu-item:nth-child(2) 
-{ width: 70%; }
-.menu-item:nth-child(3) 
-{ width: 80%; 
-  margin-top: 10px;}
-.menu-item:nth-child(4) 
-{ width: 80%; }
-.menu-item:nth-child(5) 
-{ width: 90%; 
-margin-top: 15px;}
-.menu-item:nth-child(6) 
-{ width: 80%; }
-.menu-item:nth-child(7) 
-{ width: 80%; }
-
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-.menu-item:hover img {
-  transform: scale(1.05);
-}
-
-
-
-
-
 
 /* media queries! */
 
@@ -437,13 +419,16 @@ margin-top: 15px;}
     float: left; 
     }
     .box {
-      height: 150%;
-      margin-top: 20%;
-      margin-right: 2%; 
+      height: 500px; /* Adjusted fixed height */
+      margin-top: 15%;
+      margin-bottom: 0; /* Removed negative margin */
+      margin-right: 2%;
     }
   
-    .message {
-      margin-top: -200px;
+    .menu-container {
+      bottom: 0;
+      margin-top: 0; /* Removed margin-top */
+      margin-bottom: 0; /* Removed margin-bottom */
     }
 
 
