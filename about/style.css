@@ -55,15 +55,6 @@ h1{
 
 
 h2{
-  font-family: "evolver-variable", sans-serif;
-  font-style: normal;
-  font-size: 50px;
-  text-align: center;
-  color:#FFFFFF
-
-}
-
-h3{
 font-family: "evolver-variable", sans-serif;
 font-weight: 400;
 font-size: 40px;
@@ -147,4 +138,29 @@ marquee{
 
 .menu-item:hover img {
   transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* media queries! */
+
+
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 70px;
+   }
+  
+  
+  h2{
+  font-size: 30px;
+    }
+  
+  p{
+ font-size: 15px;
+  
+  }
 }
