@@ -47,7 +47,7 @@ ul{
 h1{
   font-family: "evolver-variable", sans-serif;
   font-style: normal;
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
   color:#FFFFFF
 
@@ -63,6 +63,23 @@ h2{
 
 }
 
+h3{
+font-family: "evolver-variable", sans-serif;
+font-weight: 400;
+font-size: 40px;
+color:#FFFFFF;
+padding-top: -30px;
+}
+
+p{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color:#FFFFFF
+}
+
+
 marquee{
   font-family: "evolver-variable", sans-serif;
   font-style: normal;
@@ -74,7 +91,13 @@ marquee{
 }
 
 
-
+.message {
+  margin: 10%;
+  width: 80%;
+  text-align: center;
+  overflow: hidden; 
+  opacity: 1; 
+}
 
 
 .menu-container {
