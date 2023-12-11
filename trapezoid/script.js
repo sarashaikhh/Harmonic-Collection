@@ -1,31 +1,42 @@
-// code for drawing
-
 document.addEventListener('DOMContentLoaded', function () {
   const imageContainer = document.getElementById('draw');
   const refreshButton = document.getElementById('refreshButton');
+  let previousColor = getRandomColor(); // Initialize with a random color
 
   refreshButton.addEventListener('click', function () {
-    // Clear the drawing by removing all child elements
-    while (imageContainer.firstChild) {
-      imageContainer.removeChild(imageContainer.firstChild);
-    }
+    // Instead of setting innerHTML to an empty string, you can use innerHTML directly
+    imageContainer.innerHTML = '';
+    // Generate a new random color and update the previousColor variable
+    previousColor = getRandomColor();
   });
 
   imageContainer.addEventListener('click', function (event) {
     const offsetX = event.offsetX;
     const offsetY = event.offsetY;
 
-    // Create an image element
-    const image = document.createElement('img');
-    image.src = 'trap.png'; // Replace 'star.png' with the actual image URL
+    // Use the previous color for the path
+    const currentColor = previousColor;
 
-    // Generate random width and height for the image (you can adjust the range as needed)
-    const randomWidth = Math.floor(Math.random() * 100) + 20; // Random width between 20 and 120 pixels
-    const randomHeight = Math.floor(Math.random() * 100) + 20; // Random height between 20 and 120 pixels
+    // Create an image element with inline SVG content using createElementNS
+    const image = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    image.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    image.setAttribute('viewBox', '0 0 233.76 119.07');
+
+    // Define the SVG content
+    image.innerHTML = `
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233.76 119.07">
+        <polygon class="cls-1" points="233.76 119.07 0 119.07 39.47 0 186.66 0 233.76 119.07"/>
+      </svg>
+    `;
+
+    // Generate random width and height for the image
+    const randomWidth = Math.floor(Math.random() * 100) + 20;
+    const randomHeight = Math.floor(Math.random() * 100) + 20;
 
     // Set the width and height of the image
-    image.style.width = `${randomWidth}px`;
-    image.style.height = `${randomHeight}px`;
+    image.setAttribute('width', `${randomWidth}px`);
+    image.setAttribute('height', `${randomHeight}px`);
 
     // Position the image at the clicked coordinates
     image.style.position = 'absolute';
@@ -35,7 +46,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Append the image to the container
     imageContainer.appendChild(image);
   });
+
+  // Function to generate a random color
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 });
+
 
 
 // code for slideshow

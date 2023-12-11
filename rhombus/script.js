@@ -1,27 +1,30 @@
-// code for drawing
-
 document.addEventListener('DOMContentLoaded', function () {
   const imageContainer = document.getElementById('draw');
   const refreshButton = document.getElementById('refreshButton');
 
   refreshButton.addEventListener('click', function () {
     // Clear the drawing by removing all child elements
-    while (imageContainer.firstChild) {
-      imageContainer.removeChild(imageContainer.firstChild);
-    }
+    imageContainer.innerHTML = '';
   });
 
   imageContainer.addEventListener('click', function (event) {
     const offsetX = event.offsetX;
     const offsetY = event.offsetY;
 
-    // Create an image element
-    const image = document.createElement('img');
-    image.src = 'rhombus.png'; // Replace 'star.png' with the actual image URL
+    // Generate a random color for the path
+    const randomColor = getRandomColor();
 
-    // Generate random width and height for the image (you can adjust the range as needed)
-    const randomWidth = Math.floor(Math.random() * 100) + 20; // Random width between 20 and 120 pixels
-    const randomHeight = Math.floor(Math.random() * 100) + 20; // Random height between 20 and 120 pixels
+    // Create an image element with inline SVG content
+    const image = document.createElement('div');
+    image.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.63 330.58">
+        <polygon fill="${randomColor}" points="222.63 165.29 113.95 330.58 0 165.29 113.95 0 222.63 165.29"/>
+      </svg>
+    `;
+
+    // Generate random width and height for the image
+    const randomWidth = Math.floor(Math.random() * 100) + 20;
+    const randomHeight = Math.floor(Math.random() * 100) + 20;
 
     // Set the width and height of the image
     image.style.width = `${randomWidth}px`;
@@ -35,7 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Append the image to the container
     imageContainer.appendChild(image);
   });
+
+  // Function to generate a random color
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 });
+
 
 
 // code for slideshow
