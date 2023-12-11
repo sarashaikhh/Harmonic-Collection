@@ -340,7 +340,7 @@ h3{
 }
 
 p{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  font-family: "futura-pt", sans-serif;  
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -348,7 +348,7 @@ p{
 }
 
 p1{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-style: normal;
+  font-family: "futura-pt", sans-serif;  
   text-align: center;
   padding-top: 10px;
   font-weight: 400;
