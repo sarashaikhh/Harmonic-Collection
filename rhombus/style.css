@@ -51,7 +51,7 @@
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
   height: 250px;
-  margin-left: 28%; 
+  margin-left: 31%; 
   margin-top: -40px;
   position: absolute;
   color: white; 
@@ -371,7 +371,7 @@ p1{
 @media screen and (max-width: 768px) {
   .rhombus {
     width: 60%;
-    padding-left: 10%;
+    padding-left: 9%;
   }
 
   .def {
