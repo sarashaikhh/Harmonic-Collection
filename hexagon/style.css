@@ -50,8 +50,8 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 250px;
-  margin-left: 38%; 
+  height: 200px;
+  margin-left: 33%; 
   margin-top: -40px;
   position: absolute;
   color: white; 
@@ -89,9 +89,9 @@
 
 
 .formula{
-  margin-top: 280px;
+  margin-top: 230px;
   margin-bottom: 280px;
-  margin-left: 70%;
+  margin-left: 65%;
 
 }
 
@@ -153,7 +153,7 @@
 }
 
 .slide img {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.1;
   width: 100%;
   height: auto;
 }

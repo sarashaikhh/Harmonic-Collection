@@ -51,8 +51,8 @@
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
   height: 250px;
-  margin-left: 31%; 
-  margin-top: -40px;
+  margin-left: 29%; 
+  margin-top: -50px;
   position: absolute;
   color: white; 
 }
@@ -89,7 +89,7 @@
 
 
 .formula{
-  margin-top: 300px;
+  margin-top: 270px;
   margin-left: 60%;
 }
 

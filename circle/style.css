@@ -24,7 +24,7 @@
 
 
 .circle{
-  width: 550px;
+  width: 500px;
   position: absolute;
   margin-left: 8%;
   margin-top: 3%;
@@ -52,7 +52,7 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 450px;
+  height: 410px;
   margin-left: 38%; 
   margin-top: -40px;
   position: absolute;
@@ -91,7 +91,7 @@
 
 
 .formula{
-  margin-top: 500px;
+  margin-top: 430px;
   margin-left: 70%;
 }
 

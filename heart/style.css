@@ -24,9 +24,9 @@
 
 
 .heart{
-  width: 550px;
+  width: 500px;
   position: absolute;
-  margin-left: 4%;
+  margin-left: 6%;
   margin-top: 3%;
 }
 
@@ -52,7 +52,7 @@
   border: 10px solid white; 
   transition: background-color 0.3s, color 0.3s;
   width: 500px; 
-  height: 450px;
+  height: 420px;
   margin-left: 38%; 
   margin-top: -40px;
   position: absolute;
@@ -91,8 +91,8 @@
 
 
 .formula{
-  margin-top: 500px;
-  margin-left: 70%;
+  margin-top: 470px;
+  margin-left: 65%;
 
 }
 
