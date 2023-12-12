@@ -489,7 +489,7 @@ margin-top: 15px;}
 
   @media screen and (max-device-width: 768px) {
     .hex {
-      width: 80%;
+      width: 50%;
       margin-left: 5%; 
     }
     .def {

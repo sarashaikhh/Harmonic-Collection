@@ -436,7 +436,7 @@ p1{
 @media screen and (max-device-width: 768px) {
   .circle {
     padding-left: 2%; 
-    width: 70%;
+    width: 50%;
   }
   .def {
   margin-left: 5%; 

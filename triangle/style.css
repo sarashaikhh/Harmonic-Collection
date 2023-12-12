@@ -431,7 +431,7 @@ p1{
 
 @media screen and (max-device-width: 768px) {
   .triangle {
-    width: 80%;
+    width: 50%;
     padding-left: 5%; 
   }
   .def {

@@ -484,7 +484,7 @@ margin-top: 15px;}
 @media screen and (max-device-width: 768px) {
   .heart {
     padding-left: 5%; 
-    width: 80%;
+    width: 50%;
   }
   .def {
   margin-left: 5%; 
@@ -494,7 +494,7 @@ margin-top: 15px;}
   width: 80%;
 
   }
-
+  
   .def h1{    
   font-size: 30px;
   }
