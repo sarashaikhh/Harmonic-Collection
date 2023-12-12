@@ -432,6 +432,67 @@ p1{
 
 
 
+@media screen and (max-device-width: 768px) {
+  .rhombus {
+    width: 60%;
+    padding-left: 9%;
+  }
+
+  .def {
+    margin-left: 5%;
+    width: 100px;
+    height: 150px;
+    margin-top: 600px;
+    width: 80%;
+  }
+
+  .def h1 {
+    font-size: 30px;
+  }
+
+  .def h3 {
+    font-size: 20px;
+  }
+
+  .def p {
+    font-size: 10px;
+    color: inherit;
+  }
+
+  .formula {
+    margin-left: 50%;
+    margin-top: 820px;
+  }
+
+  .formula h1 {
+    font-size: 25px;
+  }
+
+  .history {
+    margin-top: 15%;
+    width: 80%;
+  }
+
+  .art {
+    margin-top: 5%;
+    width: 80%;
+    padding-left: 5%;
+    float: left;
+  }
+
+  .box {
+    height: 500px; /* Adjusted fixed height */
+    margin-top: 15%;
+    margin-bottom: 0; /* Removed negative margin */
+    margin-right: 2%;
+  }
+
+  .menu-container {
+    bottom: 0;
+    margin-top: 0; /* Removed margin-top */
+    margin-bottom: 0; /* Removed margin-bottom */
+  }
+}
 
 
 
